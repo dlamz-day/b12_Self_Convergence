@@ -1,0 +1,44 @@
+ 
+****************************************
+Report : area
+Design : MISR
+Version: R-2020.09-SP5
+Date   : Mon Jul  4 11:20:01 2022
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    slow (File: /home/m108/m108061621/Desktop/TSMC_process/T90/db/slow.db)
+
+Number of ports:                           27
+Number of nets:                            55
+Number of cells:                           40
+Number of combinational cells:             27
+Number of sequential cells:                13
+Number of macros/black boxes:               0
+Number of buf/inv:                          2
+Number of references:                       9
+
+Combinational area:                142.531205
+Buf/Inv area:                        4.233600
+Noncombinational area:             197.568003
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                   340.099207
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+MISR                               340.0992    100.0  142.5312   197.5680  0.0000  MISR
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+Total                                                 142.5312   197.5680  0.0000
+
+1

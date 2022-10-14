@@ -1,0 +1,3 @@
+Command Line: /usr/cad/synopsys/verdi/2022.06/platform/LINUXAMD64/bin/vfast -silent -del . -o /home/m108/m108061621/Desktop/Research/BISG_my/b12_adpll_clk/gl_sim/top_gl_b12_SelfCon_not_ideal_clk_noSource.vcd.fsdb -ft verilog /home/m108/m108061621/Desktop/Research/BISG_my/b12_adpll_clk/gl_sim/top_gl_b12_SelfCon_not_ideal_clk_noSource.vcd
+uname(Linux ws40 3.10.0-1160.31.1.el7.x86_64 #1 SMP Thu Jun 10 13:32:12 UTC 2021 x86_64)
+au time 102.013251 76.238055 2.305352 delta 84168704 84168704 total 182194176 182194176

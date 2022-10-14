@@ -1,0 +1,47 @@
+ 
+****************************************
+Report : reference
+Design : div2
+Version: R-2020.09-SP5
+Date   : Tue Apr  5 14:35:02 2022
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1             slow           3.528000       6     21.168001  
+AND4X1             slow           5.644800       2     11.289600  
+AOI2B1X1           slow           4.939200       1      4.939200  
+AOI21X1            slow           3.528000       4     14.112000  
+AOI22XL            slow           4.233600      29    122.774404  
+AOI31X1            slow           4.233600       1      4.233600  
+AOI211X1           slow           4.233600       1      4.233600  
+AOI221XL           slow           5.644800       2     11.289600  
+AOI222XL           slow           6.350400      14     88.905600  
+CLKINVX1           slow           2.116800      10     21.168001  
+CLKNAND2X2         slow           2.822400      10     28.224001  
+MXI2X1             slow           5.644800       5     28.224001  
+NAND2BX1           slow           3.528000       1      3.528000  
+NAND4X1            slow           4.939200       2      9.878400  
+NOR2BX1            slow           3.528000       1      3.528000  
+NOR2X1             slow           2.822400      11     31.046401  
+NOR3BX1            slow           4.233600       2      8.467200  
+OAI2B1X1           slow           4.939200       1      4.939200  
+OAI2B11X1          slow           5.644800       1      5.644800  
+OAI2BB2X1          slow           5.644800       2     11.289600  
+OAI22X1            slow           4.233600       4     16.934401  
+XNOR2X1            slow           5.644800       2     11.289600  
+XOR2X1             slow           5.644800       2     11.289600  
+-----------------------------------------------------------------------------
+Total 23 references                                   478.396811
+1

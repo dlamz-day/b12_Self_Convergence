@@ -1,0 +1,58 @@
+ 
+****************************************
+Report : reference
+Design : control_slow
+Version: R-2020.09-SP5
+Date   : Wed Aug 31 20:20:42 2022
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND4X2             slow           5.644800       1      5.644800  
+AO22X2             slow           5.644800      20    112.896004  
+AOI211X1           slow           4.233600       1      4.233600  
+BUFX2              slow           2.822400       1      2.822400  
+DFFNSRHX1          slow          25.401600       1     25.401600  n
+DFFNSRHX2          slow          25.401600       1     25.401600  n
+DFFRQX2            slow          15.523200      34    527.788801  n
+DFFRX1             slow          16.934401       1     16.934401  n
+DFFSQXL            slow          14.112000       1     14.112000  n
+INVX2              slow           2.116800       6     12.700800  
+NAND2BX2           slow           3.528000       1      3.528000  
+NAND2X2            slow           2.822400       3      8.467200  
+NAND3XL            slow           3.528000       4     14.112000  
+NAND4X1            slow           4.939200       1      4.939200  
+NOR2BX1            slow           3.528000      14     49.392002  
+NOR2X1             slow           2.822400       1      2.822400  
+NOR2X2             slow           2.822400       5     14.112000  
+NOR3BX1            slow           4.233600       1      4.233600  
+NOR3X1             slow           3.528000       4     14.112000  
+NOR4BBX2           slow           7.056000       1      7.056000  
+NOR4BX1            slow           5.644800       1      5.644800  
+NOR4BX2            slow           5.644800       1      5.644800  
+NOR4X1             slow           4.233600       1      4.233600  
+NOR4X2             slow           4.233600       3     12.700800  
+OAI2B2X1           slow           5.644800       2     11.289600  
+OAI21X1            slow           3.528000       2      7.056000  
+OR3X1              slow           4.233600       2      8.467200  
+OR3X2              slow           4.233600       2      8.467200  
+XNOR2X1            slow           5.644800       7     39.513601  
+XOR2X1             slow           5.644800      12     67.737602  
+control_slow_DW01_inc_0_DW01_inc_1
+                                113.601597       1    113.601597  h
+control_slow_DW01_inc_1_DW01_inc_2
+                                198.273594       1    198.273594  h
+-----------------------------------------------------------------------------
+Total 32 references                                  1353.340806
+1

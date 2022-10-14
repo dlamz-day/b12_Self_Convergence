@@ -1,0 +1,7 @@
+***** Do NOT Remove First Line *****
+.lib 'crn90g_3d3_lk_v1d2_usage.l' sf_lib
+
+.inc 'BISG_TOP.netlist'
+.temp 25
+
+.inc 'spice_pwr_supply.spi'

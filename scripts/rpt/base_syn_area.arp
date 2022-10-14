@@ -1,0 +1,44 @@
+ 
+****************************************
+Report : area
+Design : base
+Version: R-2020.09-SP5
+Date   : Fri Aug  5 19:27:53 2022
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    slow (File: /home/m108/m108061621/Desktop/TSMC_process/T90/db/slow.db)
+
+Number of ports:                          212
+Number of nets:                           395
+Number of cells:                          186
+Number of combinational cells:            186
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                         14
+Number of references:                      22
+
+Combinational area:                778.276818
+Buf/Inv area:                       29.635201
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                   778.276818
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+base                               778.2768    100.0  778.2768     0.0000  0.0000  base
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+Total                                                 778.2768     0.0000  0.0000
+
+1

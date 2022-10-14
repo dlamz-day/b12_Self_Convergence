@@ -1,0 +1,38 @@
+catch { setAnalysisMode -analysisType bcwc }
+catch { setAnalysisMode -clkSrcPath true }
+catch { setAnalysisMode -clockPropagation sdcControl }
+catch { setAnalysisMode -log false }
+catch { setAnalysisMode -virtualIPO false }
+catch { setAnalysisMode -warn false }
+setExtractRCMode  -engine preRoute
+catch { setCTSMode -moveGateLimit 25 }
+catch {setNanoRouteMode -quiet -routeTopRoutingLayer 15}
+
+catch { setPlaceMode -checkRoute false }
+catch { setPlaceMode -clkGateAware true }
+catch { setPlaceMode -congEffort medium }
+catch { setPlaceMode -doCongOpt false }
+catch { setPlaceMode -ignoreScan true }
+catch { setPlaceMode -ignoreSpare true }
+catch { setPlaceMode -maxRouteLayer 4 }
+catch { setPlaceMode -moduleAwareSpare false }
+catch { setPlaceMode -modulePlan true }
+catch { setPlaceMode -placeIoPins true }
+catch { setPlaceMode -powerDriven false }
+catch { setPlaceMode -preserveRouting false }
+catch { setPlaceMode -reorderScan true }
+catch { setPlaceMode -rmAffectedRouting false }
+catch { setPlaceMode -swapEEQ false }
+catch { setPlaceMode -timingDriven true }
+catch { setIlmMode -keepHighFanoutPorts true -loopBack false -keepFlatten true }
+catch { setDelayCalMode -engine aae }
+catch { setDelayCalMode -ignore_clock_idealness false }
+catch { setDelayCalMode -ignoreNetLoad false }
+catch { setAddRingMode -stacked_via_bottom_layer M1 }
+catch { setAddRingMode -stacked_via_top_layer M9 }
+catch { setImportMode -config true }
+catch { setImportMode -keepEmptyModule true }
+catch { setImportMode -treatUndefinedCellAsBbox false }
+catch { setTieHiLoMode -cell {TIEHI TIELO} }
+catch { setTieHiLoMode -maxDistance 100 }
+catch { setTieHiLoMode -maxFanout 20 }

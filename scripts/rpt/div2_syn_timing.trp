@@ -1,0 +1,47 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : div2
+Version: R-2020.09-SP5
+Date   : Tue Apr  5 14:35:02 2022
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: bin[0] (input port)
+  Endpoint: fast_clk (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  bin[0] (in)                              0.00       0.00 f
+  U227/Y (NAND2BX1)                        0.18       0.18 f
+  U226/Y (AOI211X1)                        0.14       0.32 r
+  U225/Y (CLKINVX1)                        0.06       0.37 f
+  U224/Y (AOI31X1)                         0.15       0.52 r
+  U223/Y (NOR2X1)                          0.08       0.60 f
+  U222/Y (CLKINVX1)                        0.05       0.64 r
+  U203/Y (AOI21X1)                         0.11       0.76 f
+  U200/Y (CLKNAND2X2)                      0.07       0.83 r
+  U197/Y (CLKINVX1)                        0.11       0.94 f
+  U196/Y (AND2X1)                          0.17       1.11 f
+  U122/Y (OAI2BB2X1)                       0.13       1.24 f
+  U121/Y (AOI221XL)                        0.12       1.36 r
+  U119/Y (OAI22X1)                         0.09       1.45 f
+  U118/Y (NOR3BX1)                         0.11       1.56 r
+  U117/Y (MXI2X1)                          0.07       1.63 f
+  U116/Y (MXI2X1)                          0.07       1.70 r
+  U115/Y (OAI2B1X1)                        0.05       1.75 f
+  fast_clk (out)                           0.00       1.75 f
+  data arrival time                                   1.75
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

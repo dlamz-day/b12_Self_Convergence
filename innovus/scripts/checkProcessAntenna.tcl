@@ -1,0 +1,1 @@
+check_process_antenna -out_file ${top_name}.antenna.rpt -error 1000

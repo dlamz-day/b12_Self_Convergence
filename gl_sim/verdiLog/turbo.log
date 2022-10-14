@@ -1,0 +1,5 @@
+Command Line: /usr/cad/synopsys/verdi/2022.06/platform/LINUXAMD64/bin/Novas
+uname(Linux ws40 3.10.0-1160.31.1.el7.x86_64 #1 SMP Thu Jun 10 13:32:12 UTC 2021 x86_64)
+\! Could not get the fileId of /home/m108/m108061621/Desktop/Research/BISG_my/b12_adpll_clk/gl_sim/top_gl_b12_SelfCon_not_ideal_clk_noSource.vcd.fsdb
+\! Could not get the fileId of /home/m108/m108061621/Desktop/Research/BISG_my/b12_adpll_clk/gl_sim/top_gl_b12_SelfCon_not_ideal_clk_noSource.vcd
+au time 1219745.422042 7835.632838 9040.125879 delta 1492447232 1492447232 total 2019868672 2019868672

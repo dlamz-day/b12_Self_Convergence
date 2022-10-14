@@ -1,0 +1,58 @@
+ 
+****************************************
+Report : area
+Design : BISG_TOP
+Version: R-2020.09-SP5
+Date   : Thu Sep 15 16:31:32 2022
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'BISG_TOP' contains 1442 high-fanout nets. A fanout number of 1 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    slow (File: /home/m108/m108061621/Desktop/TSMC_process/T90/db/slow.db)
+
+Number of ports:                          461
+Number of nets:                          1759
+Number of cells:                         1290
+Number of combinational cells:           1017
+Number of sequential cells:               256
+Number of macros/black boxes:               0
+Number of buf/inv:                        204
+Number of references:                       6
+
+Combinational area:               4611.801676
+Buf/Inv area:                      503.092814
+Noncombinational area:            4798.079965
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                  9409.881640
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  ---------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-     Noncombi-  Black-
+                                  Total      Total    national   national   boxes   Design
+--------------------------------  ---------  -------  ---------  ---------  ------  ----------------------------------
+BISG_TOP                          9409.8816    100.0     8.4672     0.0000  0.0000  BISG_TOP
+MISR_0                             340.0992      3.6   142.5312   197.5680  0.0000  MISR
+b12_0                             4306.2768     45.8  1912.8817  2393.3952  0.0000  b12
+comp_0                            2868.9696     30.5  1139.5440  1213.6320  0.0000  comp
+comp_0/add_156                      81.8496      0.9    81.8496     0.0000  0.0000  comp_DW01_inc_0
+comp_0/add_65                      156.6432      1.7   156.6432     0.0000  0.0000  comp_DW01_add_0
+comp_0/add_99                       92.4336      1.0    92.4336     0.0000  0.0000  comp_DW01_inc_1
+comp_0/sub_55                      184.8672      2.0   184.8672     0.0000  0.0000  comp_DW01_sub_1
+control_0                         1633.4640     17.4    76.2048     0.0000  0.0000  control
+control_0/fast01                   203.9184      2.2    55.7424   148.1760  0.0000  control_fast
+control_0/slow01                  1353.3408     14.4   431.8272   609.6384  0.0000  control_slow
+control_0/slow01/add_66            198.2736      2.1   198.2736     0.0000  0.0000  control_slow_DW01_inc_1_DW01_inc_2
+control_0/slow01/add_72            113.6016      1.2   113.6016     0.0000  0.0000  control_slow_DW01_inc_0_DW01_inc_1
+lfsr_0                             252.6048      2.7    16.9344   235.6704  0.0000  lfsr
+--------------------------------  ---------  -------  ---------  ---------  ------  ----------------------------------
+Total                                                 4611.8017  4798.0800  0.0000
+
+1

@@ -1,0 +1,48 @@
+ 
+****************************************
+Report : area
+Design : comp
+Version: R-2020.09-SP5
+Date   : Mon Sep 12 21:25:18 2022
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    slow (File: /home/m108/m108061621/Desktop/TSMC_process/T90/db/slow.db)
+
+Number of ports:                          194
+Number of nets:                           591
+Number of cells:                          391
+Number of combinational cells:            309
+Number of sequential cells:                61
+Number of macros/black boxes:               0
+Number of buf/inv:                         46
+Number of references:                      45
+
+Combinational area:               1655.337612
+Buf/Inv area:                       99.489603
+Noncombinational area:            1213.631989
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                  2868.969602
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  ---------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-     Noncombi-  Black-
+                                  Total      Total    national   national   boxes   Design
+--------------------------------  ---------  -------  ---------  ---------  ------  ---------------
+comp                              2868.9696    100.0  1139.5440  1213.6320  0.0000  comp
+add_156                             81.8496      2.9    81.8496     0.0000  0.0000  comp_DW01_inc_0
+add_65                             156.6432      5.5   156.6432     0.0000  0.0000  comp_DW01_add_0
+add_99                              92.4336      3.2    92.4336     0.0000  0.0000  comp_DW01_inc_1
+sub_55                             184.8672      6.4   184.8672     0.0000  0.0000  comp_DW01_sub_1
+--------------------------------  ---------  -------  ---------  ---------  ------  ---------------
+Total                                                 1655.3376  1213.6320  0.0000
+
+1

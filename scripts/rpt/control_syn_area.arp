@@ -1,0 +1,48 @@
+ 
+****************************************
+Report : area
+Design : control
+Version: R-2020.09-SP5
+Date   : Wed Aug 31 20:29:07 2022
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    slow (File: /home/m108/m108061621/Desktop/TSMC_process/T90/db/slow.db)
+
+Number of ports:                          125
+Number of nets:                           348
+Number of cells:                          201
+Number of combinational cells:            150
+Number of sequential cells:                45
+Number of macros/black boxes:               0
+Number of buf/inv:                         17
+Number of references:                       8
+
+Combinational area:                875.649605
+Buf/Inv area:                       97.372801
+Noncombinational area:             757.814402
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                  1633.464007
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  ----------------------------------
+control                           1633.4640    100.0   76.2048     0.0000  0.0000  control
+fast01                             203.9184     12.5   55.7424   148.1760  0.0000  control_fast
+slow01                            1353.3408     82.9  431.8272   609.6384  0.0000  control_slow
+slow01/add_66                      198.2736     12.1  198.2736     0.0000  0.0000  control_slow_DW01_inc_1_DW01_inc_2
+slow01/add_72                      113.6016      7.0  113.6016     0.0000  0.0000  control_slow_DW01_inc_0_DW01_inc_1
+--------------------------------  ---------  -------  --------  ---------  ------  ----------------------------------
+Total                                                 875.6496   757.8144  0.0000
+
+1

@@ -1,0 +1,45 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : control_fast
+Version: R-2020.09-SP5
+Date   : Fri Aug  5 19:15:51 2022
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: cap_cnt_reg_0_
+              (falling edge-triggered flip-flop clocked by cap_clk)
+  Endpoint: cap_cnt_reg_1_
+            (falling edge-triggered flip-flop clocked by cap_clk)
+  Path Group: cap_clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock cap_clk (fall edge)                0.50       0.50
+  clock network delay (ideal)              0.00       0.50
+  cap_cnt_reg_0_/CKN (DFFNSRHX1)           0.00       0.50 f
+  cap_cnt_reg_0_/QN (DFFNSRHX1)            0.37       0.87 f
+  U23/Y (NAND2X2)                          0.04       0.91 r
+  U22/Y (OAI32XL)                          0.08       0.99 f
+  cap_cnt_reg_1_/D (DFFNSRHX1)             0.00       0.99 f
+  data arrival time                                   0.99
+
+  clock cap_clk (fall edge)                1.50       1.50
+  clock network delay (ideal)              0.00       1.50
+  cap_cnt_reg_1_/CKN (DFFNSRHX1)           0.00       1.50 f
+  library setup time                      -0.05       1.45
+  data required time                                  1.45
+  -----------------------------------------------------------
+  data required time                                  1.45
+  data arrival time                                  -0.99
+  -----------------------------------------------------------
+  slack (MET)                                         0.46
+
+
+1

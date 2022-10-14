@@ -1,0 +1,25 @@
+ 
+****************************************
+Report : reference
+Design : clock
+Version: R-2020.09-SP5
+Date   : Fri Aug  5 19:33:54 2022
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+base                            778.276818       1    778.276818  h
+-----------------------------------------------------------------------------
+Total 1 references                                    778.276818
+1

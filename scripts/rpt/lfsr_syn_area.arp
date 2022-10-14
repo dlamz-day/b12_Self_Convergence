@@ -1,0 +1,44 @@
+ 
+****************************************
+Report : area
+Design : lfsr
+Version: R-2020.09-SP5
+Date   : Fri Jul  1 13:29:38 2022
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    slow (File: /home/m108/m108061621/Desktop/TSMC_process/T90/db/slow.db)
+
+Number of ports:                            3
+Number of nets:                            21
+Number of cells:                           19
+Number of combinational cells:              3
+Number of sequential cells:                16
+Number of macros/black boxes:               0
+Number of buf/inv:                          0
+Number of references:                       3
+
+Combinational area:                 16.934401
+Buf/Inv area:                        0.000000
+Noncombinational area:             235.670404
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                   252.604805
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+lfsr                               252.6048    100.0   16.9344   235.6704  0.0000  lfsr
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+Total                                                  16.9344   235.6704  0.0000
+
+1

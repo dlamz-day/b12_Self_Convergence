@@ -1,0 +1,90 @@
+Magic 271485
+Revision Verdi_T-2022.06
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 25 1536 698 100 65
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/m108/m108061621/Desktop/Research/BISG_my/b12_adpll_clk/gl_sim/top_gl_b12_SelfCon_not_ideal_clk_noSource.vcd.fsdb"
+
+openDirFile -d / "" "/home/m108/m108061621/m108061621.bak/Desktop/Research/BISG_tzu/gate-sim_mul16/rtl_sim/gl_top_FFnum32.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; active file:
+activeDirFile "" "/home/m108/m108061621/m108061621.bak/Desktop/Research/BISG_tzu/gate-sim_mul16/rtl_sim/gl_top_FFnum32.fsdb"
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 0.000000 72781610.000000
+cursor 56623340.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 0
+; marker line index
+markerPos 15
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/home/m108/m108061621/m108061621.bak/Desktop/Research/BISG_tzu/gate-sim_mul16/rtl_sim/gl_top_FFnum32.fsdb"
+addSignal -h 15 -UNSIGNED -UDEC /stimulus/A[7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope B[7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope R[3:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope S[15:0]
+addSignal -h 15 -holdScope TCK
+addSignal -h 15 -holdScope base_clk
+addSignal -h 15 -UNSIGNED -UDEC -holdScope bin[7:0]
+addSignal -h 15 -holdScope mode
+addSignal -h 15 -holdScope over
+addSignal -h 15 -holdScope pass
+addSignal -h 15 -holdScope rst_n
+addSignal -h 15 -holdScope scan_clk
+addSignal -h 15 -holdScope scan_done
+addSignal -h 15 -holdScope shift_en
+addSignal -h 15 -UNSIGNED -UDEC -holdScope sig[4:0]
+addGroup "G2"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/home/m108/m108061621/m108061621.bak/Desktop/Research/BISG_tzu/gate-sim_mul16/rtl_sim/gl_top_FFnum32.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/stimulus"
+
+SCOPE_LIST_BEGIN
+"/stimulus"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+
+activeDirFile "" "/home/m108/m108061621/m108061621.bak/Desktop/Research/BISG_tzu/gate-sim_mul16/rtl_sim/gl_top_FFnum32.fsdb"
+
+

@@ -1,0 +1,197 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 5
+Design : BISG_TOP
+Version: R-2020.09-SP5
+Date   : Thu Sep 15 16:31:33 2022
+****************************************
+
+ # A fanout number of 1 was used for high fanout net computations.
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: comp_0/scan_done_cnt_reg_0_
+              (falling edge-triggered flip-flop clocked by clk)
+  Endpoint: comp_0/hibin_reg_9_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  comp_0/scan_done_cnt_reg_0_/CKN (DFFNSRHX1)             0.00 #     2.50 f
+  comp_0/scan_done_cnt_reg_0_/QN (DFFNSRHX1)              0.35 #     2.85 f
+  comp_0/U289/Y (NAND2X2)                                 0.04 #     2.89 r
+  comp_0/U288/Y (NOR4X2)                                  0.04 #     2.93 f
+  comp_0/U286/Y (NAND4X2)                                 0.05 #     2.98 r
+  comp_0/U219/Y (INVX2)                                   0.03 #     3.01 f
+  comp_0/U300/Y (NOR3BX1)                                 0.09 #     3.10 r
+  comp_0/U299/Y (BUFX2)                                   0.07 #     3.17 r
+  comp_0/U220/Y (INVX2)                                   0.02 #     3.19 f
+  comp_0/U301/Y (OAI2B2X1)                                0.08 #     3.27 r
+  comp_0/hibin_reg_9_/D (DFFRQX2)                         0.00 #     3.27 r
+  data arrival time                                                  3.27
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  comp_0/hibin_reg_9_/CK (DFFRQX2)                        0.00       5.00 r
+  library setup time                                     -0.16       4.84
+  data required time                                                 4.84
+  --------------------------------------------------------------------------
+  data required time                                                 4.84
+  data arrival time                                                 -3.27
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.56
+
+
+  Startpoint: comp_0/scan_done_cnt_reg_0_
+              (falling edge-triggered flip-flop clocked by clk)
+  Endpoint: comp_0/hibin_reg_2_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  comp_0/scan_done_cnt_reg_0_/CKN (DFFNSRHX1)             0.00 #     2.50 f
+  comp_0/scan_done_cnt_reg_0_/QN (DFFNSRHX1)              0.35 #     2.85 f
+  comp_0/U289/Y (NAND2X2)                                 0.04 #     2.89 r
+  comp_0/U288/Y (NOR4X2)                                  0.04 #     2.93 f
+  comp_0/U286/Y (NAND4X2)                                 0.05 #     2.98 r
+  comp_0/U219/Y (INVX2)                                   0.03 #     3.01 f
+  comp_0/U300/Y (NOR3BX1)                                 0.09 #     3.10 r
+  comp_0/U299/Y (BUFX2)                                   0.07 #     3.17 r
+  comp_0/U220/Y (INVX2)                                   0.02 #     3.19 f
+  comp_0/U290/Y (OAI22X1)                                 0.08 #     3.27 r
+  comp_0/hibin_reg_2_/D (DFFSRXL)                         0.00 #     3.27 r
+  data arrival time                                                  3.27
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  comp_0/hibin_reg_2_/CK (DFFSRXL)                        0.00       5.00 r
+  library setup time                                     -0.16       4.84
+  data required time                                                 4.84
+  --------------------------------------------------------------------------
+  data required time                                                 4.84
+  data arrival time                                                 -3.27
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.57
+
+
+  Startpoint: comp_0/scan_done_cnt_reg_0_
+              (falling edge-triggered flip-flop clocked by clk)
+  Endpoint: comp_0/hibin_reg_3_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  comp_0/scan_done_cnt_reg_0_/CKN (DFFNSRHX1)             0.00 #     2.50 f
+  comp_0/scan_done_cnt_reg_0_/QN (DFFNSRHX1)              0.35 #     2.85 f
+  comp_0/U289/Y (NAND2X2)                                 0.04 #     2.89 r
+  comp_0/U288/Y (NOR4X2)                                  0.04 #     2.93 f
+  comp_0/U286/Y (NAND4X2)                                 0.05 #     2.98 r
+  comp_0/U219/Y (INVX2)                                   0.03 #     3.01 f
+  comp_0/U300/Y (NOR3BX1)                                 0.09 #     3.10 r
+  comp_0/U299/Y (BUFX2)                                   0.07 #     3.17 r
+  comp_0/U220/Y (INVX2)                                   0.02 #     3.19 f
+  comp_0/U291/Y (OAI22X1)                                 0.08 #     3.27 r
+  comp_0/hibin_reg_3_/D (DFFSRXL)                         0.00 #     3.27 r
+  data arrival time                                                  3.27
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  comp_0/hibin_reg_3_/CK (DFFSRXL)                        0.00       5.00 r
+  library setup time                                     -0.16       4.84
+  data required time                                                 4.84
+  --------------------------------------------------------------------------
+  data required time                                                 4.84
+  data arrival time                                                 -3.27
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.57
+
+
+  Startpoint: comp_0/scan_done_cnt_reg_0_
+              (falling edge-triggered flip-flop clocked by clk)
+  Endpoint: comp_0/hibin_reg_1_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  comp_0/scan_done_cnt_reg_0_/CKN (DFFNSRHX1)             0.00 #     2.50 f
+  comp_0/scan_done_cnt_reg_0_/QN (DFFNSRHX1)              0.35 #     2.85 f
+  comp_0/U289/Y (NAND2X2)                                 0.04 #     2.89 r
+  comp_0/U288/Y (NOR4X2)                                  0.04 #     2.93 f
+  comp_0/U286/Y (NAND4X2)                                 0.05 #     2.98 r
+  comp_0/U219/Y (INVX2)                                   0.03 #     3.01 f
+  comp_0/U300/Y (NOR3BX1)                                 0.09 #     3.10 r
+  comp_0/U299/Y (BUFX2)                                   0.07 #     3.17 r
+  comp_0/U220/Y (INVX2)                                   0.02 #     3.19 f
+  comp_0/U298/Y (OAI22X1)                                 0.08 #     3.27 r
+  comp_0/hibin_reg_1_/D (DFFSRXL)                         0.00 #     3.27 r
+  data arrival time                                                  3.27
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  comp_0/hibin_reg_1_/CK (DFFSRXL)                        0.00       5.00 r
+  library setup time                                     -0.16       4.84
+  data required time                                                 4.84
+  --------------------------------------------------------------------------
+  data required time                                                 4.84
+  data arrival time                                                 -3.27
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.57
+
+
+  Startpoint: comp_0/scan_done_cnt_reg_0_
+              (falling edge-triggered flip-flop clocked by clk)
+  Endpoint: comp_0/hibin_reg_0_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  comp_0/scan_done_cnt_reg_0_/CKN (DFFNSRHX1)             0.00 #     2.50 f
+  comp_0/scan_done_cnt_reg_0_/QN (DFFNSRHX1)              0.35 #     2.85 f
+  comp_0/U289/Y (NAND2X2)                                 0.04 #     2.89 r
+  comp_0/U288/Y (NOR4X2)                                  0.04 #     2.93 f
+  comp_0/U286/Y (NAND4X2)                                 0.05 #     2.98 r
+  comp_0/U219/Y (INVX2)                                   0.03 #     3.01 f
+  comp_0/U300/Y (NOR3BX1)                                 0.09 #     3.10 r
+  comp_0/U299/Y (BUFX2)                                   0.07 #     3.17 r
+  comp_0/U220/Y (INVX2)                                   0.02 #     3.19 f
+  comp_0/U296/Y (OAI22X1)                                 0.08 #     3.27 r
+  comp_0/hibin_reg_0_/D (DFFSRXL)                         0.00 #     3.27 r
+  data arrival time                                                  3.27
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  comp_0/hibin_reg_0_/CK (DFFSRXL)                        0.00       5.00 r
+  library setup time                                     -0.16       4.84
+  data required time                                                 4.84
+  --------------------------------------------------------------------------
+  data required time                                                 4.84
+  data arrival time                                                 -3.27
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.57
+
+
+1

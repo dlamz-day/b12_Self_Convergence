@@ -1,0 +1,46 @@
+ 
+****************************************
+Report : area
+Design : control_slow
+Version: R-2020.09-SP5
+Date   : Wed Aug 31 20:20:41 2022
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    slow (File: /home/m108/m108061621/Desktop/TSMC_process/T90/db/slow.db)
+
+Number of ports:                           92
+Number of nets:                           285
+Number of cells:                          171
+Number of combinational cells:            129
+Number of sequential cells:                38
+Number of macros/black boxes:               0
+Number of buf/inv:                          9
+Number of references:                      32
+
+Combinational area:                743.702404
+Buf/Inv area:                       19.756801
+Noncombinational area:             609.638402
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                  1353.340806
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  ----------------------------------
+control_slow                      1353.3408    100.0  431.8272   609.6384  0.0000  control_slow
+add_66                             198.2736     14.7  198.2736     0.0000  0.0000  control_slow_DW01_inc_1_DW01_inc_2
+add_72                             113.6016      8.4  113.6016     0.0000  0.0000  control_slow_DW01_inc_0_DW01_inc_1
+--------------------------------  ---------  -------  --------  ---------  ------  ----------------------------------
+Total                                                 743.7024   609.6384  0.0000
+
+1

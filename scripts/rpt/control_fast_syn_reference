@@ -1,0 +1,38 @@
+ 
+****************************************
+Report : reference
+Design : control_fast
+Version: R-2020.09-SP5
+Date   : Fri Aug  5 19:15:51 2022
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AOI2B1X1           slow           4.939200       1      4.939200  
+AOI21X1            slow           3.528000       1      3.528000  
+AOI32XL            slow           4.939200       1      4.939200  
+DFFNSRHX1          slow          25.401600       4    101.606400  n
+DFFRQX2            slow          15.523200       3     46.569600  n
+INVX2              slow           2.116800       3      6.350400  
+NAND2BX2           slow           3.528000       1      3.528000  
+NAND2X2            slow           2.822400       1      2.822400  
+NOR2X2             slow           2.822400       2      5.644800  
+NOR3BX1            slow           4.233600       1      4.233600  
+NOR3X1             slow           3.528000       1      3.528000  
+OAI2B2X1           slow           5.644800       1      5.644800  
+OAI32XL            slow           4.939200       1      4.939200  
+XOR2X1             slow           5.644800       1      5.644800  
+-----------------------------------------------------------------------------
+Total 14 references                                   203.918401
+1

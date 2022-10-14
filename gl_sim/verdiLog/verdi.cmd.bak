@@ -1,0 +1,226 @@
+verdiSetActWin -dock widgetDock_<Decl._Tree>
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+verdiWindowResize -win $_Verdi_1 "1086" "82" "900" "700"
+wvCreateWindow
+verdiDockWidgetMaximize -dock windowDock_nWave_2
+wvSetPosition -win $_nWave2 {("G1" 0)}
+wvOpenFile -win $_nWave2 \
+           {/home/m108/m108061621/Desktop/Research/BISG_my/b21_SelfConv/gl_sim/my_gl_top_b21_SelfConverg_single_sample.fsdb}
+wvGetSignalOpen -win $_nWave2
+wvGetSignalSetScope -win $_nWave2 "/AAtb_top"
+wvSetPosition -win $_nWave2 {("G1" 17)}
+wvSetPosition -win $_nWave2 {("G1" 17)}
+wvAddSignal -win $_nWave2 -clear
+wvAddSignal -win $_nWave2 -group {"G1" \
+{/AAtb_top/BINnum\[9:0\]} \
+{/AAtb_top/GoldenSignature\[12:0\]} \
+{/AAtb_top/K\[31:0\]} \
+{/AAtb_top/ScanNum\[19:0\]} \
+{/AAtb_top/TCK} \
+{/AAtb_top/clk} \
+{/AAtb_top/count_K\[31:0\]} \
+{/AAtb_top/over} \
+{/AAtb_top/pass} \
+{/AAtb_top/range\[5:0\]} \
+{/AAtb_top/rst_n} \
+{/AAtb_top/scan_done} \
+{/AAtb_top/si\[31:0\]} \
+{/AAtb_top/sig\[12:0\]} \
+{/AAtb_top/speed\[9:0\]} \
+{/AAtb_top/store_speed\[0:23\]} \
+{/AAtb_top/t_p_dec\[7:0\]} \
+}
+wvAddSignal -win $_nWave2 -group {"G2" \
+}
+wvSelectSignal -win $_nWave2 {( "G1" 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 \
+           )} 
+wvSetPosition -win $_nWave2 {("G1" 17)}
+wvSelectSignal -win $_nWave2 {( "G1" 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 \
+           )} 
+wvSetRadix -win $_nWave2 -format UDec
+wvSelectSignal -win $_nWave2 {( "G1" 11 )} 
+wvZoomAll -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G1" 11 )} 
+wvSelectSignal -win $_nWave2 {( "G1" 16 )} 
+wvSelectSignal -win $_nWave2 {( "G1" 15 )} 
+wvSelectSignal -win $_nWave2 {( "G1" 16 )} 
+wvSelectSignal -win $_nWave2 {( "G1" 16 )} 
+wvZoomAll -win $_nWave2
+wvZoom -win $_nWave2 2302374716.694436 2451408100.845611
+wvZoom -win $_nWave2 2370338579.038427 2389707120.013716
+wvZoom -win $_nWave2 2376759589.509185 2382306377.897439
+wvZoom -win $_nWave2 2379319313.644591 2379927949.568905
+wvZoom -win $_nWave2 2379394149.812126 2379492668.311937
+wvSetCursor -win $_nWave2 2379443217.391673 -snap {("G1" 5)}
+wvSetMarker -win $_nWave2 2379446752.000000
+wvZoomAll -win $_nWave2
+wvSetCursor -win $_nWave2 1410576546.276755 -snap {("G1" 17)}
+wvSetPosition -win $_nWave2 {("G2" 0)}
+wvOpenFile -win $_nWave2 \
+           {/home/m108/m108061621/Desktop/Research/BISG_my/b12_adpll_clk/gl_sim/top_gl_b12_SelfConverg_t_p30_range30_.fsdb}
+wvGetSignalOpen -win $_nWave2
+wvGetSignalSetScope -win $_nWave2 "/AAtb_top"
+wvSetPosition -win $_nWave2 {("G2" 15)}
+wvSetPosition -win $_nWave2 {("G2" 15)}
+wvAddSignal -win $_nWave2 -clear
+wvAddSignal -win $_nWave2 -group {"G1" \
+}
+wvSetActiveFile -win $_nWave2 \
+           {/home/m108/m108061621/Desktop/Research/BISG_my/b21_SelfConv/gl_sim/my_gl_top_b21_SelfConverg_single_sample.fsdb}
+wvAddSignal -win $_nWave2 -group {"G1" {/AAtb_top/BINnum\[9:0\]} \
+{/AAtb_top/GoldenSignature\[12:0\]} \
+{/AAtb_top/K\[31:0\]} \
+{/AAtb_top/ScanNum\[19:0\]} \
+{/AAtb_top/TCK} \
+{/AAtb_top/clk} \
+{/AAtb_top/count_K\[31:0\]} \
+{/AAtb_top/over} \
+{/AAtb_top/pass} \
+{/AAtb_top/range\[5:0\]} \
+{/AAtb_top/rst_n} \
+{/AAtb_top/scan_done} \
+{/AAtb_top/si\[31:0\]} \
+{/AAtb_top/sig\[12:0\]} \
+{/AAtb_top/speed\[9:0\]} \
+{/AAtb_top/store_speed\[0:23\]} \
+{/AAtb_top/t_p_dec\[7:0\]} \
+}
+wvAddSignal -win $_nWave2 -group {"G2" \
+}
+wvSetActiveFile -win $_nWave2 \
+           {/home/m108/m108061621/Desktop/Research/BISG_my/b12_adpll_clk/gl_sim/top_gl_b12_SelfConverg_t_p30_range30_.fsdb}
+wvAddSignal -win $_nWave2 -group {"G2" {/AAtb_top/BINnum\[9:0\]} \
+{/AAtb_top/K\[31:0\]} \
+{/AAtb_top/ScanNum\[19:0\]} \
+{/AAtb_top/TCK} \
+{/AAtb_top/clk} \
+{/AAtb_top/over} \
+{/AAtb_top/pass} \
+{/AAtb_top/range\[5:0\]} \
+{/AAtb_top/rst_n} \
+{/AAtb_top/scan_done} \
+{/AAtb_top/sig\[12:0\]} \
+{/AAtb_top/speed\[9:0\]} \
+{/AAtb_top/start} \
+{/AAtb_top/store_speed\[0:23\]} \
+{/AAtb_top/t_p_dec\[7:0\]} \
+}
+wvAddSignal -win $_nWave2 -group {"G3" \
+}
+wvSelectSignal -win $_nWave2 {( "G2" 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 )} 
+wvSetPosition -win $_nWave2 {("G2" 15)}
+wvSelectSignal -win $_nWave2 {( "G2" 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 )} 
+wvSetRadix -win $_nWave2 -format UDec
+wvZoom -win $_nWave2 163083058.849543 173825056.737837
+wvZoom -win $_nWave2 167713823.964806 168806959.967861
+wvZoom -win $_nWave2 168176304.581477 168315574.312636
+wvZoom -win $_nWave2 168224066.957150 168247278.579010
+wvSetCursor -win $_nWave2 168232064.551170 -snap {("G2" 3)}
+wvZoomAll -win $_nWave2
+wvZoom -win $_nWave2 113558263.390529 148155866.978798
+wvZoomAll -win $_nWave2
+wvZoom -win $_nWave2 156805267.875865 165454668.772933
+wvZoom -win $_nWave2 161074523.446788 162322033.191558
+wvZoom -win $_nWave2 161581324.280513 161960175.396913
+wvZoom -win $_nWave2 161749803.743322 161809909.930059
+wvSetCursor -win $_nWave2 161772199.077300 -snap {("G2" 4)}
+wvSetMarker -win $_nWave2 161773742.000000
+wvSelectSignal -win $_nWave2 {( "G2" 3 )} 
+wvZoomAll -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G2" 4 )} 
+wvDisplayGridCount -win $_nWave2 -off
+wvGetSignalClose -win $_nWave2
+wvReloadFile -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G2" 8 )} 
+wvZoomAll -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G2" 2 )} 
+wvSetCursor -win $_nWave2 151323660.717957 -snap {("G2" 3)}
+wvZoom -win $_nWave2 0.000000 117532940.363462
+wvZoomAll -win $_nWave2
+wvZoom -win $_nWave2 0.000000 217435939.672404
+wvZoomAll -win $_nWave2
+wvZoom -win $_nWave2 0.000000 218905101.426947
+wvZoomAll -win $_nWave2
+wvZoom -win $_nWave2 0.000000 180706895.808822
+wvSelectAll -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G1" 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 \
+           )} {( "G2" 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 )} 
+wvSetRadix -win $_nWave2 -format UDec
+wvSelectSignal -win $_nWave2 {( "G2" 9 )} 
+wvZoomAll -win $_nWave2
+wvZoom -win $_nWave2 0.000000 158669469.490673
+wvZoomAll -win $_nWave2
+wvZoom -win $_nWave2 1770339914.224639 1830575546.160913
+wvZoomAll -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G2" 10 )} 
+wvSelectGroup -win $_nWave2 {G1}
+wvScrollDown -win $_nWave2 0
+wvSelectGroup -win $_nWave2 {G2}
+wvSetPosition -win $_nWave2 {("G2" 0)}
+wvSetActiveFile -win $_nWave2 -applyAnnotation off \
+           {/home/m108/m108061621/Desktop/Research/BISG_my/b21_SelfConv/gl_sim/my_gl_top_b21_SelfConverg_single_sample.fsdb}
+wvSelectSignal -win $_nWave2 {( "G1" 6 )} 
+wvZoomAll -win $_nWave2
+wvSelectGroup -win $_nWave2 {G1}
+wvSelectGroup -win $_nWave2 {G2}
+wvSelectSignal -win $_nWave2 {( "G2" 9 )} 
+wvDisplayGridCount -win $_nWave2 -off
+wvGetSignalClose -win $_nWave2
+wvReloadFile -win $_nWave2
+wvSetActiveFile -win $_nWave2 -applyAnnotation off \
+           {/home/m108/m108061621/Desktop/Research/BISG_my/b12_adpll_clk/gl_sim/top_gl_b12_SelfConverg_t_p30_range30_.fsdb}
+wvSelectSignal -win $_nWave2 {( "G2" 5 )} 
+wvZoomAll -win $_nWave2
+wvZoom -win $_nWave2 1691005179.479303 1830575546.160913
+wvSelectSignal -win $_nWave2 {( "G2" 14 )} 
+wvSelectSignal -win $_nWave2 {( "G2" 14 )} 
+wvSetRadix -win $_nWave2 -format UDec
+wvSelectSignal -win $_nWave2 {( "G2" 14 )} 
+wvZoomAll -win $_nWave2
+wvSetCursor -win $_nWave2 321746424.244976 -snap {("G2" 12)}
+wvSetMarker -win $_nWave2 484330225.000000
+wvSetCursor -win $_nWave2 661122789.544471 -snap {("G2" 12)}
+wvSetMarker -win $_nWave2 864620225.000000
+wvSetCursor -win $_nWave2 1044574007.480264 -snap {("G2" 12)}
+wvSetMarker -win $_nWave2 1244930225.000000
+wvSetWindowTimeUnit -win $_nWave2 1.000000 ns
+wvSetMarker -win $_nWave2 864630.267000
+wvSetCursor -win $_nWave2 1244380.006098 -snap {("G2" 12)}
+wvSetCursor -win $_nWave2 1217935.094516 -snap {("G2" 12)}
+wvSetCursor -win $_nWave2 1081303.051344 -snap {("G2" 12)}
+wvSetMarker -win $_nWave2 1244930.225000
+wvSetCursor -win $_nWave2 1372197.078743 -snap {("G2" 12)}
+wvSetMarker -win $_nWave2 1625220.267000
+wvZoom -win $_nWave2 0.000000 173361.087036
+wvSetCursor -win $_nWave2 93487.188762 -snap {("G2" 12)}
+wvSetMarker -win $_nWave2 92440.267000
+wvSetMarker -win $_nWave2 104011.496000
+wvSetCursor -win $_nWave2 82652.120823 -snap {("G2" 12)}
+wvSetMarker -win $_nWave2 92440.267000
+wvSetCursor -win $_nWave2 101544.034153 -snap {("G2" 12)}
+wvSetCursor -win $_nWave2 81540.831803 -snap {("G2" 12)}
+wvSetMarker -win $_nWave2 69350.267000
+wvSetMarker -win $_nWave2 57800.225000
+wvSetCursor -win $_nWave2 67371.896805 -snap {("G2" 12)}
+wvSetMarker -win $_nWave2 46250.267000
+wvSetCursor -win $_nWave2 52786.228424 -snap {("G2" 12)}
+wvSetMarker -win $_nWave2 34700.225000
+wvSetCursor -win $_nWave2 44034.827396 -snap {("G2" 12)}
+wvSetMarker -win $_nWave2 23150.225000
+wvSetCursor -win $_nWave2 32921.937202 -snap {("G2" 12)}
+wvSetCursor -win $_nWave2 42506.804994 -snap {("G2" 12)}
+wvSetMarker -win $_nWave2 34700.225000
+wvSetMarker -win $_nWave2 23150.225000
+wvSetCursor -win $_nWave2 32783.026074 -snap {("G2" 12)}
+wvSetCursor -win $_nWave2 15141.312890 -snap {("G2" 12)}
+wvSetMarker -win $_nWave2 23150.225000
+wvSetMarker -win $_nWave2 23150.225000
+wvSetCursor -win $_nWave2 32505.203819 -snap {("G2" 12)}
+wvSetMarker -win $_nWave2 46240.225000
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvSetCursor -win $_nWave2 289490.789570 -snap {("G2" 12)}
+wvSetMarker -win $_nWave2 484330.225000
+wvSelectGroup -win $_nWave2 {G2}
+wvSelectGroup -win $_nWave2 {G2}
+wvSelectGroup -win $_nWave2 {G1}

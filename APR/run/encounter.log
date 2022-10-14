@@ -1,0 +1,1502 @@
+Checking out Encounter license ...
+	edsxl		DENIED:		"Encounter_Digital_Impl_Sys_XL"
+	edsl		DENIED:		"Encounter_Digital_Impl_Sys_L"
+	encblk		DENIED:		"Encounter_Block"
+	fegxl		DENIED:		"First_Encounter_GXL"
+	fexl		DENIED:		"FE_GPS"
+	nru		DENIED:		"NanoRoute_Ultra"
+	vdixl		DENIED:		"Virtuoso_Digital_Implem_XL"
+	vdi		CHECKED OUT:	"Virtuoso_Digital_Implem"
+Virtuoso_Digital_Implem 14.2 license checkout succeeded.
+	Maximum number of instance allowed (1 x 50000).
+**ERROR: (ENCOAX-142):	Could not open shared library libfeoax22.so : /usr/cad/cadence/EDI/cur/tools/lib/64bit/libstdc++.so.6: version `CXXABI_1.3.9' not found (required by /usr/cad/cadence/INNOVUS/INNOVUS_20.10.000/oa_v22.60.028/lib/linux_rhel60_64/opt/liboaDesign.so)
+
+**ERROR: (ENCOAX-142):	OA features will be disabled in this session.
+
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2014.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter v14.28-s033_1 (64bit) 03/21/2016 13:34 (Linux 2.6.18-194.el5)
+@(#)CDS: NanoRoute v14.28-s005 NR160313-1959/14_28-UB (database version 2.30, 267.6.1) {superthreading v1.25}
+@(#)CDS: CeltIC v14.28-s006_1 (64bit) 03/08/2016 00:08:23 (Linux 2.6.18-194.el5)
+@(#)CDS: AAE 14.28-s002 (64bit) 03/21/2016 (Linux 2.6.18-194.el5)
+@(#)CDS: CTE 14.28-s007_1 (64bit) Mar  7 2016 23:11:05 (Linux 2.6.18-194.el5)
+@(#)CDS: CPE v14.28-s006
+@(#)CDS: IQRC/TQRC 14.2.2-s217 (64bit) Wed Apr 15 23:10:24 PDT 2015 (Linux 2.6.18-194.el5)
+@(#)CDS: OA 22.50-p011 Tue Nov 11 03:24:55 2014
+@(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+@(#)CDS: RCDB 11.5
+--- Starting "Encounter v14.28-s033_1" on Thu Sep 15 16:33:06 2022 (mem=95.3M) ---
+--- Running on ws40 (x86_64 w/Linux 3.10.0-1160.31.1.el7.x86_64) ---
+This version was compiled on Mon Mar 21 13:34:48 PDT 2016.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+Sourcing tcl/tk file "/usr/cadtool/mentor/calibre/aoi_cal_2017.4_19.14/lib/cal_enc.tcl" ...
+<CMD> setLayerPreference rve_0 -color green -isVisible 1 -isSelectable 1 -lineWidth 1 -stipple none
+<CMD> setLayerPreference rve_1 -color darkblue -isVisible 1 -isSelectable 1 -lineWidth 1 -stipple none
+<CMD> setLayerPreference rve_2 -color slateblue -isVisible 1 -isSelectable 1 -lineWidth 1 -stipple none
+<CMD> setLayerPreference rve_3 -color turquoise -isVisible 1 -isSelectable 1 -lineWidth 1 -stipple none
+<CMD> setLayerPreference rve_4 -color lightgray -isVisible 1 -isSelectable 1 -lineWidth 1 -stipple none
+<CMD> setLayerPreference rve_5 -color wheat -isVisible 1 -isSelectable 1 -lineWidth 1 -stipple none
+<CMD> setLayerPreference rve_6 -color goldenrod -isVisible 1 -isSelectable 1 -lineWidth 1 -stipple none
+<CMD> setLayerPreference rve_7 -color yellow -isVisible 1 -isSelectable 1 -lineWidth 1 -stipple none
+<CMD> setLayerPreference rve_8 -color sandybrown -isVisible 1 -isSelectable 1 -lineWidth 1 -stipple none
+<CMD> setLayerPreference rve_9 -color coral -isVisible 1 -isSelectable 1 -lineWidth 1 -stipple none
+<CMD> setLayerPreference rve_10 -color red -isVisible 1 -isSelectable 1 -lineWidth 1 -stipple none
+<CMD> setLayerPreference rve_11 -color tomato -isVisible 1 -isSelectable 1 -lineWidth 1 -stipple none
+<CMD> setLayerPreference rve_12 -color firebrick -isVisible 1 -isSelectable 1 -lineWidth 1 -stipple none
+<CMD> setLayerPreference rve_13 -color purple -isVisible 1 -isSelectable 1 -lineWidth 1 -stipple none
+<CMD> setLayerPreference rve_14 -color violet -isVisible 1 -isSelectable 1 -lineWidth 1 -stipple none
+<CMD> setLayerPreference rve_15 -color tan -isVisible 1 -isSelectable 1 -lineWidth 1 -stipple none
+<CMD> getVersion
+Reading config file - ../design_data/BISG_TOP.conf
+<CMD> setImportMode -config -treatUndefinedCellAsBbox 0 -keepEmptyModule 1
+
+**WARN: (ENCSYT-40502):	Support for the loadConfig command and the configuration file based design import
+methodology is being discontinued.  This flow will continue to work in this release for
+designs that are already using a multi-mode/multi-corner (MMMC) configuration or are pure
+physical-only designs.  For compatibility with future releases, you should transition your design
+to use the init_design based methodology for design import.  You should refer to the
+'Importing Designs Saved in Previous Versions' section in the 'Importing and Exporting Designs'
+chapter in the EDI11 user guide for more detailed information.
+
+<CMD> init_design
+**ERROR: (ENCOAX-820):	The OA features are disabled in the current session of Encounter because the oax shared library could not be loaded properly. This could be because your installation was not properly configured. To enable OA features, exit the current session and re-launch Encounter either after fixing your installation by running the Configure Installation phase, or after setting the OA_HOME variable to point to a proper OA installation. Check the "OpenAccess Installation and Configuration Guide" manual for more information.
+
+**ERROR: (ENCOAX-850):	oaxCreateCdsLibArray command cannot be run as OA features are disabled in this session.
+
+Loading LEF file /home/m108/m108061621/Desktop/TSMC_process/T90/SOCE/lef/tsmc090lk_9lm_2thick_tech.lef ...
+
+Loading LEF file /home/m108/m108061621/Desktop/TSMC_process/T90/SOCE/lef/tsmc090nvt_macros.lef ...
+Set DBUPerIGU to M2 pitch 560.
+
+Loading LEF file /home/m108/m108061621/Desktop/TSMC_process/T90/SOCE/lef/tsmc090hvt_macros.lef ...
+
+Loading LEF file /home/m108/m108061621/Desktop/TSMC_process/T90/SOCE/lef/tpzn90gv3_9lm.lef ...
+WARNING (LEFPARS-2001): No VERSION statement found, using the default value 5.8. See file /home/m108/m108061621/Desktop/TSMC_process/T90/SOCE/lef/tpzn90gv3_9lm.lef at line 19631.
+
+Loading LEF file /home/m108/m108061621/Desktop/TSMC_process/T90/SOCE/lef/tpbn90gv_9lm.lef ...
+WARNING (LEFPARS-2001): No VERSION statement found, using the default value 5.8. See file /home/m108/m108061621/Desktop/TSMC_process/T90/SOCE/lef/tpbn90gv_9lm.lef at line 111.
+**WARN: (ENCLF-201):	Pin 'VSSPST33' in macro 'PVSS2DGZ_33' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-200):	Pin 'VSSPST33' in macro 'PVSS2DGZ_33' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-201):	Pin 'AVSS' in macro 'PVSS2ANA_33' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-200):	Pin 'AVSS' in macro 'PVSS2ANA_33' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-201):	Pin 'AVSS' in macro 'PVSS1ANA_33' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-200):	Pin 'AVSS' in macro 'PVSS1ANA_33' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-201):	Pin 'VDDPST33' in macro 'PVDD2POC_33' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-200):	Pin 'VDDPST33' in macro 'PVDD2POC_33' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-201):	Pin 'VDDPST33' in macro 'PVDD2DGZ_33' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-200):	Pin 'VDDPST33' in macro 'PVDD2DGZ_33' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-201):	Pin 'AVDD' in macro 'PVDD2ANA_33' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-200):	Pin 'AVDD' in macro 'PVDD2ANA_33' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-201):	Pin 'AVDD' in macro 'PVDD1ANA_33' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-200):	Pin 'AVDD' in macro 'PVDD1ANA_33' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'REN' in macro 'PRUW24DGZ_33' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-201):	Pin 'PAD' in macro 'PRUW24DGZ_33' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'PRUW24DGZ_33' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'OEN' in macro 'PRUW24DGZ_33' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'I' in macro 'PRUW24DGZ_33' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-201):	Pin 'C' in macro 'PRUW24DGZ_33' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-200):	Pin 'REN' in macro 'PRUW16DGZ_33' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-201):	Pin 'PAD' in macro 'PRUW16DGZ_33' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'PRUW16DGZ_33' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'OEN' in macro 'PRUW16DGZ_33' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'I' in macro 'PRUW16DGZ_33' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-201):	Pin 'C' in macro 'PRUW16DGZ_33' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-200):	Pin 'REN' in macro 'PRUW12DGZ_33' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-201):	Pin 'PAD' in macro 'PRUW12DGZ_33' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'PRUW12DGZ_33' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'OEN' in macro 'PRUW12DGZ_33' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'I' in macro 'PRUW12DGZ_33' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-201):	Pin 'C' in macro 'PRUW12DGZ_33' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-200):	Pin 'REN' in macro 'PRUW08DGZ_33' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-201):	Pin 'PAD' in macro 'PRUW08DGZ_33' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (EMS-63):	Message <ENCLF-200> has exceeded the default message display limit of 20.
+To avoid this warning, increase the display limit per unique message by
+using the set_message -limit <number> command.
+The message limit can be removed by using the set_message -no_limit command.
+Note that setting a very large number using the set_message -limit command
+or removing the message limit using the set_message -no_limit command can
+significantly increase the log file size.
+To suppress a message, use the set_message -suppress command.
+**WARN: (ENCLF-201):	Pin 'C' in macro 'PRUW08DGZ_33' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-201):	Pin 'PAD' in macro 'PRU24SDGZ_33' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-201):	Pin 'C' in macro 'PRU24SDGZ_33' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-201):	Pin 'PAD' in macro 'PRU24DGZ_33' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-201):	Pin 'C' in macro 'PRU24DGZ_33' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-201):	Pin 'PAD' in macro 'PRU16SDGZ_33' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (EMS-63):	Message <ENCLF-201> has exceeded the default message display limit of 20.
+To avoid this warning, increase the display limit per unique message by
+using the set_message -limit <number> command.
+The message limit can be removed by using the set_message -no_limit command.
+Note that setting a very large number using the set_message -limit command
+or removing the message limit using the set_message -no_limit command can
+significantly increase the log file size.
+To suppress a message, use the set_message -suppress command.
+
+viaInitial starts at Thu Sep 15 16:34:13 2022
+**WARN: (ENCPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from LEF file: VIARULE TURNM1 GENERATE.
+Type 'man ENCPP-557' for more detail.
+**WARN: (ENCPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from LEF file: VIARULE TURNM2 GENERATE.
+Type 'man ENCPP-557' for more detail.
+**WARN: (ENCPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from LEF file: VIARULE TURNM3 GENERATE.
+Type 'man ENCPP-557' for more detail.
+**WARN: (ENCPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from LEF file: VIARULE TURNM4 GENERATE.
+Type 'man ENCPP-557' for more detail.
+**WARN: (ENCPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from LEF file: VIARULE TURNM5 GENERATE.
+Type 'man ENCPP-557' for more detail.
+**WARN: (ENCPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from LEF file: VIARULE TURNM6 GENERATE.
+Type 'man ENCPP-557' for more detail.
+**WARN: (ENCPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from LEF file: VIARULE TURNM7 GENERATE.
+Type 'man ENCPP-557' for more detail.
+**WARN: (ENCPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from LEF file: VIARULE TURNM8 GENERATE.
+Type 'man ENCPP-557' for more detail.
+**WARN: (ENCPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from LEF file: VIARULE TURNM9 GENERATE.
+Type 'man ENCPP-557' for more detail.
+viaInitial ends at Thu Sep 15 16:34:13 2022
+*** Begin netlist parsing (mem=336.6M) ***
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist '../design_data/BISG_TOP_syn.v'
+
+*** Memory Usage v#1 (Current mem = 340.562M, initial mem = 95.336M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=340.6M) ***
+Set top cell to BISG_TOP.
+Loading view definition file from ../design_data/BISG_TOP.view
+Reading lib_max timing library '/home/m108/m108061621/Desktop/TSMC_process/T90/lib/slow.lib' ...
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO0' of cell 'ACCSHCINX2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO1' of cell 'ACCSHCINX2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO0' of cell 'ACCSHCINX4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO1' of cell 'ACCSHCINX4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO0N' of cell 'ACCSHCONX2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO1N' of cell 'ACCSHCONX2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO0N' of cell 'ACCSHCONX4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO1N' of cell 'ACCSHCONX4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO0N' of cell 'ACCSIHCONX2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO1N' of cell 'ACCSIHCONX2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO0N' of cell 'ACCSIHCONX4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO1N' of cell 'ACCSIHCONX4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ACHCINX2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ACHCINX4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CON' of cell 'ACHCONX2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CON' of cell 'ACHCONX4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'CMPR42X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ICO' of cell 'CMPR42X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'CMPR42X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'CMPR42X2' is not defined in the library.
+Message <TECHLIB-436> has exceeded the message display limit of '20'. setMessageLimit/set_message_limit sets the limit. unsetMessageLimit/unset_message_limit can be used to reset this.
+Read 626 cells in library 'slow' 
+Reading lib_min timing library '/home/m108/m108061621/Desktop/TSMC_process/T90/lib/fast.lib' ...
+Read 626 cells in library 'fast' 
+*** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.30min, fe_real=5.93min, fe_mem=425.9M) ***
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell BISG_TOP ...
+*** Netlist is unique.
+** info: there are 2060 modules.
+** info: there are 1273 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 427.605M, initial mem = 95.336M) ***
+*info: set bottom ioPad orient R0
+Reading IO assignment file "../design_data/BISG_TO.io" ...
+**Warn: ignored IO file "../design_data/BISG_TO.io" line 4: Pin: vdd 	    E
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "../design_data/BISG_TO.io" line 5: Pin: vss 	    E
+  Reason: unable to determine object from name.
+Adjusting Core to Left to: 5.0400. Core to Bottom to: 5.0400.
+**WARN: (ENCFP-3961):	The techSite 'corner' has no related cells in LEF library. Cannot make calculations for this site type unless cell models of this type exist in the LEF library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF to avoid this message.
+Type 'man ENCFP-3961' for more detail.
+**WARN: (ENCFP-3961):	The techSite 'pad' has no related cells in LEF library. Cannot make calculations for this site type unless cell models of this type exist in the LEF library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF to avoid this message.
+Type 'man ENCFP-3961' for more detail.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Input Pin Transition Delay as 0.1 ps.
+Initializing multi-corner RC extraction with 2 active RC Corners ...
+Reading Capacitance Table File /home/m108/m108061621/Desktop/TSMC_process/T90/SOCE/CapTbl/t90g_rcw.CapTbl ...
+Cap table was created using Encounter 08.10-p004_1.
+Process name: cln90_1p10m_rcworst.
+**WARN: (ENCEXT-2760):	Layer M10 specified in the cap table is ignored because it is greater than the maximum number of layers, 9, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+**WARN: (ENCEXT-2771):	Via VIA_9 specified in the cap table is ignored because its top layer, M10, is greater than the maximum number of layers, 9, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+**WARN: (ENCEXT-2710):	Basic Cap table for layer M10 is ignored because the layer is not specified in the technology LEF file.
+Reading Capacitance Table File /home/m108/m108061621/Desktop/TSMC_process/T90/SOCE/CapTbl/t90g_rcb.CapTbl ...
+Cap table was created using Encounter 08.10-p004_1.
+Process name: cln90_1p10m_rcbest.
+**WARN: (ENCEXT-2760):	Layer M10 specified in the cap table is ignored because it is greater than the maximum number of layers, 9, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+**WARN: (ENCEXT-2771):	Via VIA_9 specified in the cap table is ignored because its top layer, M10, is greater than the maximum number of layers, 9, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+**WARN: (ENCEXT-2710):	Basic Cap table for layer M10 is ignored because the layer is not specified in the technology LEF file.
+Importing multi-corner RC tables ... 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: func_mode_max
+    RC-Corner Name        : RC_corner_max
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : '/home/m108/m108061621/Desktop/TSMC_process/T90/SOCE/CapTbl/t90g_rcw.CapTbl'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1   	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1   	[Derived from postRoute_res (effortLevel low)]
+ 
+ Analysis View: func_mode_min
+    RC-Corner Name        : RC_corner_min
+    RC-Corner Index       : 1
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : '/home/m108/m108061621/Desktop/TSMC_process/T90/SOCE/CapTbl/t90g_rcb.CapTbl'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1   	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1   	[Derived from postRoute_res (effortLevel low)]
+*Info: initialize multi-corner CTS.
+CTE reading timing constraint file '../design_data/BISG_TOP_syn.sdc' ...
+Current (total cpu=0:00:18.2, real=0:05:56, peak res=452.7M, current mem=535.6M)
+**WARN: (TCLCMD-1014):	The SDC set_operating_conditions assertion is not supported. Please use the create_delay_corner command to specify the desired operating enviroment. Use the setAnalysisMode command to control single vs. bestCase/worstCase vs. on-chip variation timing analysis. (File ../design_data/BISG_TOP_syn.sdc, Line 10).
+
+INFO (CTE): read_dc_script finished with 1 WARNING.
+WARNING (CTE-25): Line: 8 of File ../design_data/BISG_TOP_syn.sdc : Skipped unsupported command: set_units
+
+
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=459.5M, current mem=542.1M)
+Current (total cpu=0:00:18.3, real=0:05:56, peak res=459.5M, current mem=542.1M)
+Total number of combinational cells: 428
+Total number of sequential cells: 188
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX10 BUFX12 BUFX14 BUFX16 BUFX18 BUFX20 CLKBUFX1 BUFX2 BUFX3 BUFX4 BUFX5 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX24 CLKBUFX2 CLKBUFX3 CLKBUFX32 CLKBUFX40 CLKBUFX4 CLKBUFX6 CLKBUFX8
+Total number of usable buffers: 24
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX1 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX24 CLKINVX2 CLKINVX3 CLKINVX32 CLKINVX40 INVX1 CLKINVX4 CLKINVX6 CLKINVX8 INVX10 INVX12 INVX14 INVX16 INVX18 INVX20 INVX2 INVX3 INVXL INVX4 INVX5 INVX6 INVX8
+Total number of usable inverters: 26
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+Total number of identified usable delay cells: 8
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   ENCLF-200          346  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   ENCLF-201          215  Pin '%s' in macro '%s' has no ANTENNADIF...
+WARNING   ENCFP-3961           2  The techSite '%s' has no related cells i...
+WARNING   ENCEXT-2710          2  Basic Cap table for layer M%d is ignored...
+WARNING   ENCEXT-2760          2  Layer M%d specified in the cap table is ...
+WARNING   ENCEXT-2771          2  Via %s specified in the cap table is ign...
+WARNING   ENCPP-557            9  A single-layer VIARULE GENERATE for turn...
+ERROR     ENCOAX-820           1  The OA features are disabled in the curr...
+ERROR     ENCOAX-850           1  %s command cannot be run as OA features ...
+*** Message Summary: 578 warning(s), 2 error(s)
+
+<CMD> floorPlan -r 1.0 0.6 15 15 15 15
+**WARN: (ENCFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> addHaloToBlock 5 5 5 5 -allBlock
+<CMD> saveDesign Before_Add_Block_Ring.enc
+Writing Netlist "Before_Add_Block_Ring.enc.dat/BISG_TOP.v.gz" ...
+Saving AAE Data ...
+Saving configuration ...
+Saving preference file Before_Add_Block_Ring.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=545.2M) ***
+Writing DEF file 'Before_Add_Block_Ring.enc.dat/BISG_TOP.def.gz', current time is Thu Sep 15 16:34:24 2022 ...
+unitPerMicron=2000, dbgMicronPerDBU=0.000500, unitPerDBU=1.000000
+DEF file 'Before_Add_Block_Ring.enc.dat/BISG_TOP.def.gz' is written, current time is Thu Sep 15 16:34:24 2022 ...
+Copying Max Timing Library...
+Copying Min Timing Library...
+Copying LEF file...
+Copying  QX Layermap file...
+Copying Cap Table file ...
+Copying IO file...
+Copying Constraints file(s) ...
+Modifying Mode File...
+Modifying View File...
+Copying /home/m108/m108061621/Desktop/TSMC_process/T90/SOCE/celtic/fast.cdB...
+Copying /home/m108/m108061621/Desktop/TSMC_process/T90/SOCE/celtic/slow.cdB...
+RC_corner_max RC_corner_min
+Modifying Globals File...
+Modifying Power Constraints File...
+Generated self-contained design: /home/m108/m108061621/Desktop/Research/BISG_my/b12_adpll_clk/APR/run
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> setAddRingMode -stacked_via_bottom_layer M1
+<CMD> setAddRingMode -stacked_via_top_layer M9
+<CMD> addRing -skip_via_on_wire_shape Noshape -skip_via_on_pin Standardcell -type core_rings -jog_distance 0.42 -threshold 0.42 -nets {VDD VSS} -follow core -layer {bottom M5 top M5 right M4 left M4} -width 3 -spacing 2 -offset 4 -extend_corner {tl lt tr bl br rb lb rt}
+
+The power planner created 8 wires.
+*** Ending Ring Generation (totcpu: 0:00:00.0,real: 0:00:00.0, mem: 546.2M) ***
+<CMD> addRing -skip_via_on_wire_shape Noshape -skip_via_on_pin Standardcell -around each_block -jog_distance 0.42 -threshold 0.42 -type block_rings -nets {VDD VSS} -follow core -layer {bottom M1 top M1 right M2 left M2} -width 1 -spacing 1 -offset 1.5
+
+**WARN: (ENCPP-4051):	Fail to add rings. Gaps among IO cells may exist. Execute command addIoFiller to fill gaps among cells before addRing.
+*** Ending Ring Generation (totcpu: 0:00:00.0,real: 0:00:00.0, mem: 546.2M) ***
+<CMD> all_constraint_modes -active
+func_mode
+<CMD> set_interactive_constraint_modes [all_constraint_modes -active]
+<CMD> set_dont_touch "b12_0"  
+<CMD> set_dont_touch "b12_0/*"  
+<CMD> clearGlobalNets
+<CMD> globalNetConnect VDD -type pgpin -pin VDD -inst * -module {}
+<CMD> globalNetConnect VDD -type tiehi -pin VDD -inst * -module {}
+<CMD> globalNetConnect VSS -type pgpin -pin VSS -inst * -module {}
+<CMD> globalNetConnect VSS -type tielo -pin VSS -inst * -module {}
+<CMD> sroute -connect { blockPin } -layerChangeRange { M1 M5 } -blockPinTarget { nearestTarget } -checkAlignedSecondaryPin 1 -blockPin useLef -allowJogging 1 -crossoverViaBottomLayer M1 -allowLayerChange 1 -targetViaTopLayer M5 -crossoverViaTopLayer M5 -targetViaBottomLayer M1 -nets { VDD VSS }
+**WARN: (ENCSR-4054):	Option -checkAlignedSecondaryPin is obsolete. The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove -checkAlignedSecondaryPin from the script.
+**WARN: (ENCSR-4053):	Option -crossoverViaBottomLayer is obsolete and has been replaced by -crossoverViaLayerRange. The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update the script to use -crossoverViaLayerRange.
+**WARN: (ENCSR-4053):	Option -targetViaTopLayer is obsolete and has been replaced by -targetViaLayerRange. The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update the script to use -targetViaLayerRange.
+**WARN: (ENCSR-4053):	Option -crossoverViaTopLayer is obsolete and has been replaced by -crossoverViaLayerRange. The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update the script to use -crossoverViaLayerRange.
+**WARN: (ENCSR-4053):	Option -targetViaBottomLayer is obsolete and has been replaced by -targetViaLayerRange. The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update the script to use -targetViaLayerRange.
+*** Begin SPECIAL ROUTE on Thu Sep 15 16:34:33 2022 ***
+SPECIAL ROUTE ran on directory: /home/m108/m108061621/Desktop/Research/BISG_my/b12_adpll_clk/APR/run
+SPECIAL ROUTE ran on machine: ws40 (Linux 3.10.0-1160.31.1.el7.x86_64 Xeon 800Mhz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "VDD VSS"
+routeSpecial set to true
+srouteBlockPin set to "useLef"
+srouteBottomLayerLimit set to 1
+srouteBottomTargetLayerLimit set to 1
+srouteConnectConverterPin set to false
+srouteConnectCorePin set to false
+srouteConnectPadPin set to false
+srouteConnectStripe set to false
+srouteCrossoverViaBottomLayer set to 1
+srouteCrossoverViaTopLayer set to 5
+srouteFollowCorePinEnd set to 3
+srouteFollowPadPin set to false
+srouteJogControl set to "preferWithChanges differentLayer"
+srouteLevelShifterMaxGap set to 1
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+srouteStopBlockPin set to "nearestTarget"
+srouteTopLayerLimit set to 5
+srouteTopTargetLayerLimit set to 5
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1104.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+**WARN: (ENCSR-4302):	Cap-table is found in the design, so the same information from LEF will be ignored.
+Read in 18 layers, 9 routing layers, 1 overlap layer
+Read in 80 macros, 80 used
+Read in 80 components
+  80 core components: 80 unplaced, 0 placed, 0 fixed
+Read in 95 physical pins
+  95 physical pins: 0 unplaced, 0 placed, 95 fixed
+Read in 79 nets
+Read in 2 special nets, 2 routed
+Read in 255 terminals
+2 nets selected.
+
+Begin power routing ...
+**WARN: (ENCSR-1254):	Cannot find any block pin of net VDD. Check netlist, or change option to include the pin.
+**WARN: (ENCSR-1254):	Cannot find any block pin of net VSS. Check netlist, or change option to include the pin.
+  Number of Block ports routed: 0
+  Number of Power Bump ports routed: 0
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1111.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 71 via definition ...
+ Updating DB with 95 io pins ...Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+
+sroute: Total CPU time used = 0:0:0
+sroute: Total Real time used = 0:0:0
+sroute: Total Memory used = 9.30 megs
+sroute: Total Peak Memory used = 556.46 megs
+<CMD> sroute -connect { corePin } -layerChangeRange { M1 M5 } -blockPinTarget { nearestTarget } -checkAlignedSecondaryPin 1 -allowJogging 1 -crossoverViaBottomLayer M1 -allowLayerChange 1 -targetViaTopLayer M5 -crossoverViaTopLayer M5 -targetViaBottomLayer M1 -nets { VDD VSS }
+**WARN: (ENCSR-4054):	Option -checkAlignedSecondaryPin is obsolete. The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove -checkAlignedSecondaryPin from the script.
+**WARN: (ENCSR-4053):	Option -crossoverViaBottomLayer is obsolete and has been replaced by -crossoverViaLayerRange. The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update the script to use -crossoverViaLayerRange.
+**WARN: (ENCSR-4053):	Option -targetViaTopLayer is obsolete and has been replaced by -targetViaLayerRange. The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update the script to use -targetViaLayerRange.
+**WARN: (ENCSR-4053):	Option -crossoverViaTopLayer is obsolete and has been replaced by -crossoverViaLayerRange. The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update the script to use -crossoverViaLayerRange.
+**WARN: (ENCSR-4053):	Option -targetViaBottomLayer is obsolete and has been replaced by -targetViaLayerRange. The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update the script to use -targetViaLayerRange.
+**WARN: (ENCSR-4058):	Sroute option: blockPinTarget should be used in conjunction with option: -connect blockPin. 
+*** Begin SPECIAL ROUTE on Thu Sep 15 16:34:33 2022 ***
+SPECIAL ROUTE ran on directory: /home/m108/m108061621/Desktop/Research/BISG_my/b12_adpll_clk/APR/run
+SPECIAL ROUTE ran on machine: ws40 (Linux 3.10.0-1160.31.1.el7.x86_64 Xeon 800Mhz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "VDD VSS"
+routeSpecial set to true
+srouteBottomLayerLimit set to 1
+srouteBottomTargetLayerLimit set to 1
+srouteConnectBlockPin set to false
+srouteConnectConverterPin set to false
+srouteConnectPadPin set to false
+srouteConnectStripe set to false
+srouteCrossoverViaBottomLayer set to 1
+srouteCrossoverViaTopLayer set to 5
+srouteFollowCorePinEnd set to 3
+srouteFollowPadPin set to false
+srouteJogControl set to "preferWithChanges differentLayer"
+srouteLevelShifterMaxGap set to 1
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+srouteStopBlockPin set to "nearestTarget"
+srouteTopLayerLimit set to 5
+srouteTopTargetLayerLimit set to 5
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1112.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+**WARN: (ENCSR-4302):	Cap-table is found in the design, so the same information from LEF will be ignored.
+Read in 18 layers, 9 routing layers, 1 overlap layer
+Read in 1281 macros, 83 used
+Read in 80 components
+  80 core components: 80 unplaced, 0 placed, 0 fixed
+Read in 95 physical pins
+  95 physical pins: 0 unplaced, 0 placed, 95 fixed
+Read in 79 nets
+Read in 2 special nets, 2 routed
+Read in 255 terminals
+2 nets selected.
+
+Begin power routing ...
+CPU time for FollowPin 0 seconds
+CPU time for FollowPin 0 seconds
+  Number of Core ports routed: 100
+  Number of Followpin connections: 50
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1128.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 74 via definition ...
+ Updating DB with 95 io pins ...
+
+sroute post-processing starts at Thu Sep 15 16:34:33 2022
+The viaGen is rebuilding shadow vias for net VSS.
+sroute post-processing ends at Thu Sep 15 16:34:33 2022
+
+sroute post-processing starts at Thu Sep 15 16:34:33 2022
+The viaGen is rebuilding shadow vias for net VDD.
+sroute post-processing ends at Thu Sep 15 16:34:33 2022
+sroute: Total CPU time used = 0:0:0
+sroute: Total Real time used = 0:0:0
+sroute: Total Memory used = 13.30 megs
+sroute: Total Peak Memory used = 569.76 megs
+<CMD> saveDesign Power_Planning.enc
+Writing Netlist "Power_Planning.enc.dat/BISG_TOP.v.gz" ...
+Saving AAE Data ...
+Saving configuration ...
+Saving preference file Power_Planning.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=572.8M) ***
+Writing DEF file 'Power_Planning.enc.dat/BISG_TOP.def.gz', current time is Thu Sep 15 16:34:34 2022 ...
+unitPerMicron=2000, dbgMicronPerDBU=0.000500, unitPerDBU=1.000000
+DEF file 'Power_Planning.enc.dat/BISG_TOP.def.gz' is written, current time is Thu Sep 15 16:34:34 2022 ...
+Copying Max Timing Library...
+Copying Min Timing Library...
+Copying LEF file...
+Copying  QX Layermap file...
+Copying Cap Table file ...
+Copying IO file...
+Copying Constraints file(s) ...
+Modifying Mode File...
+Modifying View File...
+Copying /home/m108/m108061621/Desktop/TSMC_process/T90/SOCE/celtic/fast.cdB...
+Copying /home/m108/m108061621/Desktop/TSMC_process/T90/SOCE/celtic/slow.cdB...
+RC_corner_max RC_corner_min
+Modifying Globals File...
+Modifying Power Constraints File...
+Generated self-contained design: /home/m108/m108061621/Desktop/Research/BISG_my/b12_adpll_clk/APR/run
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> setPlaceMode -congEffort medium -timingDriven 1 -modulePlan 1 -doCongOpt 0 -clkGateAware 1 -powerDriven 0 -ignoreScan 1 -reorderScan 1 -ignoreSpare 1 -placeIOPins 1 -moduleAwareSpare 0 -checkPinLayerForAccess {  1 } -preserveRouting 0 -rmAffectedRouting 0 -checkRoute 0 -swapEEQ 0 -maxRouteLayer 4
+**WARN: (ENCTCM-125):	Option "-checkPinLayerForAccess" for command setPlaceMode is obsolete and will be ignored. It no longer has any effect and should be removed from your script.
+**WARN: (ENCSP-105):	'setPlaceMode -maxRouteLayer' will become obsolete from next release. Use 'setTrialRouteMode -maxRouteLayer N' to set maximum routing layer.Type 'man ENCSP-105' for more detail.
+<CMD> setAnalysisMode -analysisType bcwc -log false -warn false
+<CMD> placeDesign
+**WARN: (ENCSP-9525):	setPlaceMode -maxRouteLayer will overwrite setTrialRouteMode -maxRouteLayer inside placeDesign.
+**ERROR: (ENCSP-9099):	Scan chains exist in this design but are not defined. Placement and timing QoR can be severely impacted in this case!
+It is highly recommend to define scan chains either through input scan def (preferred) or specifyScanChain.
+*** Starting placeDesign default flow ***
+**INFO: Enable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 101.
+**WARN: (ENCDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+Set Default Net Delay as 0 ps.
+Set Default Net Load as 0 pF. 
+**INFO: Analyzing IO path groups for slack adjustment
+Effort level <high> specified for reg2reg_tmp.6758 path_group
+#################################################################################
+# Design Stage: PreRoute
+# Design Mode: 90nm
+# Analysis Mode: MMMC non-OCV
+# Extraction Mode: default
+# Delay Calculation Options: engine=aae SIAware=false(opt_signoff)
+# Switching Delay Calculation Engine to AAE
+#################################################################################
+Calculate delays in BcWc mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 590.9M, InitMEM = 590.9M)
+AAE_INFO: Cdb files are: 
+ 	/home/m108/m108061621/Desktop/TSMC_process/T90/SOCE/celtic/slow.cdB
+	/home/m108/m108061621/Desktop/TSMC_process/T90/SOCE/celtic/fast.cdB
+ 
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_THRD: End delay calculation. (MEM=746 CPU=0:00:00.1 REAL=0:00:00.0)
+*** CDM Built up (cpu=0:00:01.4  real=0:00:02.0  mem= 746.0M) ***
+*** Start deleteBufferTree ***
+Info: Detect buffers to remove automatically.
+Analyzing netlist ...
+All-RC-Corners-Per-Net-In-Memory is turned ON...
+Updating netlist
+
+*summary: 6 instances (buffers/inverters) removed
+*** Finish deleteBufferTree (0:00:00.0) ***
+**INFO: Disable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+*** Starting "NanoPlace(TM) placement v#1 (mem=738.0M)" ...
+**WARN: (ENCTS-403):	Delay calculation was forced to extrapolate table data outside of the characterized range. In some cases, extrapolation can reduce the accuracy of the delay calculation. You can enable more detailed reporting of these cases by enabling the command 'setDelayCalMode -reportOutBound true'.
+Type 'man ENCTS-403' for more detail.
+*** Build Buffered Sizing Timing Model (Used Compact Buffer Set) ...(cpu=0:00:01.0 mem=738.1M) ***
+*** Build Virtual Sizing Timing Model
+(cpu=0:00:01.3 mem=746.1M) ***
+Options: timingDriven clkGateAware ignoreScan ignoreSpare pinGuide congEffort=medium gpeffort=medium 
+**WARN: (ENCSP-9042):	Scan chains were not defined, -ignoreScan option will be ignored.
+Define the scan chains before using this option.
+Type 'man ENCSP-9042' for more detail.
+BISG_TOP
+#std cell=1267 (0 fixed + 1267 movable) #block=0 (0 floating + 0 preplaced)
+#ioInst=0 #net=1433 #term=5200 #term/net=3.63, #fixedIo=79, #floatIo=0, #fixedPin=79, #floatPin=0
+stdCell: 1267 single + 0 double + 0 multi
+Total standard cell length = 3.7279 (mm), area = 0.0094 (mm^2)
+Average module density = 0.600.
+Density for the design = 0.600.
+       = stdcell_area 13314 sites (9394 um^2) / alloc_area 22197 sites (15662 um^2).
+Pin Density = 0.391.
+            = total # of pins 5200 / total Instance area 13314.
+Identified 2 spare or floating instances, with no clusters.
+=== lastAutoLevel = 7 
+Clock gating cells determined by native netlist tracing.
+Iteration  1: Total net bbox = 1.498e+04 (8.04e+03 6.93e+03)
+              Est.  stn bbox = 1.716e+04 (9.21e+03 7.96e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 769.4M
+Iteration  2: Total net bbox = 1.498e+04 (8.04e+03 6.93e+03)
+              Est.  stn bbox = 1.716e+04 (9.21e+03 7.96e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 769.4M
+Iteration  3: Total net bbox = 1.216e+04 (6.82e+03 5.34e+03)
+              Est.  stn bbox = 1.469e+04 (8.13e+03 6.56e+03)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 770.4M
+Iteration  4: Total net bbox = 1.463e+04 (7.21e+03 7.42e+03)
+              Est.  stn bbox = 1.804e+04 (8.73e+03 9.31e+03)
+              cpu = 0:00:00.4 real = 0:00:00.0 mem = 771.4M
+Iteration  5: Total net bbox = 1.928e+04 (9.74e+03 9.53e+03)
+              Est.  stn bbox = 2.381e+04 (1.18e+04 1.20e+04)
+              cpu = 0:00:00.7 real = 0:00:01.0 mem = 771.4M
+Iteration  6: Total net bbox = 2.146e+04 (1.11e+04 1.03e+04)
+              Est.  stn bbox = 2.624e+04 (1.34e+04 1.28e+04)
+              cpu = 0:00:00.3 real = 0:00:00.0 mem = 771.4M
+Iteration  7: Total net bbox = 2.378e+04 (1.29e+04 1.09e+04)
+              Est.  stn bbox = 2.885e+04 (1.53e+04 1.35e+04)
+              cpu = 0:00:00.3 real = 0:00:00.0 mem = 775.4M
+Iteration  8: Total net bbox = 2.378e+04 (1.29e+04 1.09e+04)
+              Est.  stn bbox = 2.885e+04 (1.53e+04 1.35e+04)
+              cpu = 0:00:00.3 real = 0:00:01.0 mem = 775.4M
+Iteration  9: Total net bbox = 2.550e+04 (1.31e+04 1.24e+04)
+              Est.  stn bbox = 3.063e+04 (1.56e+04 1.51e+04)
+              cpu = 0:00:00.3 real = 0:00:01.0 mem = 775.4M
+Iteration 10: Total net bbox = 2.646e+04 (1.40e+04 1.25e+04)
+              Est.  stn bbox = 3.167e+04 (1.65e+04 1.52e+04)
+              cpu = 0:00:01.0 real = 0:00:01.0 mem = 775.4M
+Iteration 11: Total net bbox = 2.646e+04 (1.40e+04 1.25e+04)
+              Est.  stn bbox = 3.167e+04 (1.65e+04 1.52e+04)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 775.4M
+*** cost = 2.646e+04 (1.40e+04 1.25e+04) (cpu for global=0:00:03.3) real=0:00:05.0***
+Info: 8 clock gating cells identified, 2 (on average) moved
+Core Placement runtime cpu: 0:00:02.9 real: 0:00:03.0
+BISG_TOP
+**WARN: (ENCSP-9025):	No scan chain specified/traced.
+Type 'man ENCSP-9025' for more detail.
+*** Starting refinePlace (0:00:29.8 mem=732.0M) ***
+Total net length = 2.646e+04 (1.400e+04 1.246e+04) (ext = 5.970e+03)
+Move report: Detail placement moves 1267 insts, mean move: 1.42 um, max move: 16.33 um
+	Max move on inst (b12_0/U954): (87.52, 105.35) --> (71.68, 105.84)
+	Runtime: CPU: 0:00:00.1 REAL: 0:00:00.0 MEM: 732.0MB
+Summary Report:
+Instances move: 1267 (out of 1267 movable)
+Mean displacement: 1.42 um
+Max displacement: 16.33 um (Instance: b12_0/U954) (87.5195, 105.349) -> (71.68, 105.84)
+	Length: 8 sites, height: 1 rows, site name: TSM90NMSITE, cell type: OAI2BB2X2
+Total net length = 2.517e+04 (1.259e+04 1.258e+04) (ext = 5.833e+03)
+Runtime: CPU: 0:00:00.1 REAL: 0:00:00.0 MEM: 732.0MB
+*** Finished refinePlace (0:00:30.0 mem=732.0M) ***
+Total net length = 2.513e+04 (1.253e+04 1.260e+04) (ext = 5.817e+03)
+*** End of Placement (cpu=0:00:05.7, real=0:00:07.0, mem=732.0M) ***
+default core: bins with density >  0.75 = 3.33 % ( 1 / 30 )
+Density distribution unevenness ratio = 6.872%
+*** Free Virtual Timing Model ...(mem=732.0M)
+Starting IO pin assignment...
+*** Finishing placeDesign default flow ***
+**ERROR: (ENCSP-9099):	Scan chains exist in this design but are not defined. Placement and timing QoR can be severely impacted in this case!
+It is highly recommend to define scan chains either through input scan def (preferred) or specifyScanChain.
+**placeDesign ... cpu = 0: 0: 7, real = 0: 0: 9, mem = 732.0M **
+**WARN: (ENCSP-9526):	Restoring setTrialRouteMode -maxRouteLayer after placeDesign. Use 'setTrialRouteMode -maxRoutingLayer N' to set maximum routing layer.
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   ENCTS-403            1  Delay calculation was forced to extrapol...
+WARNING   ENCDC-1629           1  The default delay limit was set to %d. T...
+WARNING   ENCSP-9525           1  setPlaceMode -maxRouteLayer will overwri...
+WARNING   ENCSP-9526           1  Restoring setTrialRouteMode -maxRouteLay...
+WARNING   ENCSP-9025           1  No scan chain specified/traced.          
+WARNING   ENCSP-9042           1  Scan chains were not defined, -ignoreSca...
+ERROR     ENCSP-9099           2  Scan chains exist in this design but are...
+*** Message Summary: 6 warning(s), 2 error(s)
+
+<CMD> setTieHiLoMode -cell {TIEHI TIELO} -maxFanOut 20 -maxDistance 100
+<CMD> addTieHiLo -prefix LTIE
+Options: Max Distance = 100.000 microns, Max Fan-out = 20.
+INFO: Total Number of Tie Cells (TIEHI) placed: 3
+Re-routed 1436 nets
+INFO: Total Number of Tie Cells (TIELO) placed: 0
+<CMD> saveDesign Placement.enc
+Writing Netlist "Placement.enc.dat/BISG_TOP.v.gz" ...
+Saving AAE Data ...
+Saving configuration ...
+Saving preference file Placement.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=810.1M) ***
+Writing DEF file 'Placement.enc.dat/BISG_TOP.def.gz', current time is Thu Sep 15 16:34:52 2022 ...
+unitPerMicron=2000, dbgMicronPerDBU=0.000500, unitPerDBU=1.000000
+DEF file 'Placement.enc.dat/BISG_TOP.def.gz' is written, current time is Thu Sep 15 16:34:52 2022 ...
+Saving rc congestion map Placement.enc.dat/BISG_TOP.congmap.gz ...
+Copying Max Timing Library...
+Copying Min Timing Library...
+Copying LEF file...
+Copying  QX Layermap file...
+Copying Cap Table file ...
+Copying IO file...
+Copying Constraints file(s) ...
+Modifying Mode File...
+Modifying View File...
+Copying /home/m108/m108061621/Desktop/TSMC_process/T90/SOCE/celtic/fast.cdB...
+Copying /home/m108/m108061621/Desktop/TSMC_process/T90/SOCE/celtic/slow.cdB...
+RC_corner_max RC_corner_min
+Modifying Globals File...
+Modifying Power Constraints File...
+Generated self-contained design: /home/m108/m108061621/Desktop/Research/BISG_my/b12_adpll_clk/APR/run
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> setNanoRouteMode -routeWithTimingDriven true -routeWithSiDriven true -drouteUseMultiCutViaEffort high
+<CMD> routeDesign -globalDetail
+#routeDesign: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 713.72 (MB), peak = 764.49 (MB)
+#WARNING (NRIG-96) Selected single pass global detail route "-globalDetail". Clock eco and post optimizations will not be run. See "man NRIG-96" for more details.
+Begin checking placement ... (start mem=810.1M, init mem=810.1M)
+*info: Placed = 1270          
+*info: Unplaced = 0           
+Placement Density:60.02%(9401/15662)
+Finished checkPlace (cpu: total=0:00:00.0, vio checks=0:00:00.0; mem=810.1M)
+#**INFO: honoring user setting for routeWithTimingDriven set to true
+#**INFO: honoring user setting for routeWithSiDriven set to true
+
+changeUseClockNetStatus Option :  -noFixedNetWires 
+*** Changed status on (0) nets in Clock.
+*** End changeUseClockNetStatus (cpu=0:00:00.0, real=0:00:00.0, mem=810.1M) ***
+
+globalDetailRoute
+
+#setNanoRouteMode -drouteUseMultiCutViaEffort "high"
+#setNanoRouteMode -routeTopRoutingLayer 15
+#setNanoRouteMode -routeWithSiDriven true
+#setNanoRouteMode -routeWithTimingDriven true
+#Start globalDetailRoute on Thu Sep 15 16:34:53 2022
+#
+#Generating timing graph information, please wait...
+#1438 total nets, 0 already routed, 0 will ignore in trialRoute
+#Dump tif for version 2.1
+**WARN: (ENCEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_THRD: End delay calculation. (MEM=881.871 CPU=0:00:00.1 REAL=0:00:00.0)
+#Write timing file took: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 740.39 (MB), peak = 764.49 (MB)
+#Done generating timing graph information.
+#WARNING (NRDB-728) PIN VSSPST33 in CELL_VIEW PVSS2DGZ_33 does not have antenna diff area.
+#WARNING (NRDB-728) PIN AVSS in CELL_VIEW PVSS2ANA_33 does not have antenna diff area.
+#WARNING (NRDB-728) PIN AVSS in CELL_VIEW PVSS1ANA_33 does not have antenna diff area.
+#WARNING (NRDB-728) PIN VDDPST33 in CELL_VIEW PVDD2POC_33 does not have antenna diff area.
+#WARNING (NRDB-728) PIN VDDPST33 in CELL_VIEW PVDD2DGZ_33 does not have antenna diff area.
+#WARNING (NRDB-728) PIN AVDD in CELL_VIEW PVDD2ANA_33 does not have antenna diff area.
+#WARNING (NRDB-728) PIN AVDD in CELL_VIEW PVDD1ANA_33 does not have antenna diff area.
+#WARNING (NRDB-728) PIN C in CELL_VIEW PRUW24DGZ_33 does not have antenna diff area.
+#WARNING (NRDB-728) PIN PAD in CELL_VIEW PRUW24DGZ_33 does not have antenna diff area.
+#WARNING (NRDB-728) PIN C in CELL_VIEW PRUW16DGZ_33 does not have antenna diff area.
+#WARNING (NRDB-728) PIN PAD in CELL_VIEW PRUW16DGZ_33 does not have antenna diff area.
+#WARNING (NRDB-728) PIN C in CELL_VIEW PRUW12DGZ_33 does not have antenna diff area.
+#WARNING (NRDB-728) PIN PAD in CELL_VIEW PRUW12DGZ_33 does not have antenna diff area.
+#WARNING (NRDB-728) PIN C in CELL_VIEW PRUW08DGZ_33 does not have antenna diff area.
+#WARNING (NRDB-728) PIN PAD in CELL_VIEW PRUW08DGZ_33 does not have antenna diff area.
+#WARNING (NRDB-728) PIN C in CELL_VIEW PRU24SDGZ_33 does not have antenna diff area.
+#WARNING (NRDB-728) PIN PAD in CELL_VIEW PRU24SDGZ_33 does not have antenna diff area.
+#WARNING (NRDB-728) PIN C in CELL_VIEW PRU24DGZ_33 does not have antenna diff area.
+#WARNING (NRDB-728) PIN PAD in CELL_VIEW PRU24DGZ_33 does not have antenna diff area.
+#WARNING (NRDB-728) PIN C in CELL_VIEW PRU16SDGZ_33 does not have antenna diff area.
+#WARNING (EMS-27) Message (NRDB-728) has exceeded the current message display limit of 20.
+#To increase the message display limit, refer to the product command reference manual.
+#Start reading timing information from file .timing_file_6758.tif.gz ...
+#Read in timing information for 79 ports, 1270 instances from timing file .timing_file_6758.tif.gz.
+#NanoRoute Version v14.28-s005 NR160313-1959/14_28-UB
+#Bottom routing layer is M1, bottom routing layer for shielding is M1, bottom shield layer is M1
+#Start routing data preparation.
+#WARNING (NRDB-2077) The below via enclosure for LAYER M1 is not specified for width 0.120.
+#WARNING (NRDB-2078) The above via enclosure for LAYER M2 is not specified for width 0.140.
+#WARNING (NRDB-2077) The below via enclosure for LAYER M1 is not specified for width 0.120.
+#WARNING (NRDB-2078) The above via enclosure for LAYER M2 is not specified for width 0.140.
+#WARNING (NRDB-2077) The below via enclosure for LAYER M2 is not specified for width 0.140.
+#WARNING (NRDB-2078) The above via enclosure for LAYER M3 is not specified for width 0.140.
+#WARNING (NRDB-2077) The below via enclosure for LAYER M2 is not specified for width 0.140.
+#WARNING (NRDB-2078) The above via enclosure for LAYER M3 is not specified for width 0.140.
+#WARNING (NRDB-2077) The below via enclosure for LAYER M3 is not specified for width 0.140.
+#WARNING (NRDB-2078) The above via enclosure for LAYER M4 is not specified for width 0.140.
+#WARNING (NRDB-2077) The below via enclosure for LAYER M3 is not specified for width 0.140.
+#WARNING (NRDB-2078) The above via enclosure for LAYER M4 is not specified for width 0.140.
+#WARNING (NRDB-2077) The below via enclosure for LAYER M4 is not specified for width 0.140.
+#WARNING (NRDB-2078) The above via enclosure for LAYER M5 is not specified for width 0.140.
+#WARNING (NRDB-2077) The below via enclosure for LAYER M4 is not specified for width 0.140.
+#WARNING (NRDB-2078) The above via enclosure for LAYER M5 is not specified for width 0.140.
+#WARNING (NRDB-2077) The below via enclosure for LAYER M5 is not specified for width 0.140.
+#WARNING (NRDB-2078) The above via enclosure for LAYER M6 is not specified for width 0.140.
+#WARNING (NRDB-2077) The below via enclosure for LAYER M5 is not specified for width 0.140.
+#WARNING (NRDB-2078) The above via enclosure for LAYER M6 is not specified for width 0.140.
+#WARNING (NRDB-2077) The below via enclosure for LAYER M6 is not specified for width 0.140.
+#WARNING (NRDB-2078) The above via enclosure for LAYER M7 is not specified for width 0.140.
+#WARNING (NRDB-2077) The below via enclosure for LAYER M6 is not specified for width 0.140.
+#WARNING (NRDB-2078) The above via enclosure for LAYER M7 is not specified for width 0.140.
+#WARNING (NRDB-2077) The below via enclosure for LAYER M7 is not specified for width 0.140.
+#WARNING (NRDB-2078) The above via enclosure for LAYER M8 is not specified for width 0.420.
+#WARNING (NRDB-2077) The below via enclosure for LAYER M7 is not specified for width 0.140.
+#WARNING (NRDB-2078) The above via enclosure for LAYER M8 is not specified for width 0.420.
+#WARNING (NRDB-2077) The below via enclosure for LAYER M8 is not specified for width 0.420.
+#WARNING (NRDB-2078) The above via enclosure for LAYER M9 is not specified for width 0.420.
+#WARNING (NRDB-2077) The below via enclosure for LAYER M8 is not specified for width 0.420.
+#WARNING (NRDB-2078) The above via enclosure for LAYER M9 is not specified for width 0.420.
+#WARNING (NRDB-812) Cuts within VIA VIA7_4CUT violate adjacent cut spacing rule.
+#WARNING (NRDB-812) Cuts within VIA VIA8_4CUT violate adjacent cut spacing rule.
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.100.
+#Voltage range [0.000 - 0.000] has 1 net.
+#Voltage range [1.100 - 1.100] has 1 net.
+#Voltage range [0.000 - 1.100] has 1444 nets.
+# M1           H   Track-Pitch = 0.280    Line-2-Via Pitch = 0.250
+# M2           V   Track-Pitch = 0.280    Line-2-Via Pitch = 0.280
+# M3           H   Track-Pitch = 0.280    Line-2-Via Pitch = 0.280
+# M4           V   Track-Pitch = 0.280    Line-2-Via Pitch = 0.280
+# M5           H   Track-Pitch = 0.280    Line-2-Via Pitch = 0.280
+# M6           V   Track-Pitch = 0.280    Line-2-Via Pitch = 0.280
+# M7           H   Track-Pitch = 0.280    Line-2-Via Pitch = 0.280
+# M8           V   Track-Pitch = 0.840    Line-2-Via Pitch = 0.840
+# M9           H   Track-Pitch = 0.840    Line-2-Via Pitch = 0.840
+#Regenerating Ggrids automatically.
+#Auto generating G-grids with size=15 tracks, using layer M2's pitch = 0.280.
+#Using automatically generated G-grids.
+#Done routing data preparation.
+#cpu time = 00:00:03, elapsed time = 00:00:03, memory = 823.64 (MB), peak = 823.64 (MB)
+#Merging special wires...
+#Using S.M.A.R.T. routing technology.
+#Number of eco nets is 0
+#
+#Start data preparation...
+#
+#Data preparation is done on Thu Sep 15 16:34:57 2022
+#
+#Analyzing routing resource...
+#Routing resource analysis is done on Thu Sep 15 16:34:57 2022
+#
+#  Resource Analysis:
+#
+#               Routing  #Avail      #Track     #Total     %Gcell
+#  Layer      Direction   Track     Blocked      Gcell    Blocked
+#  --------------------------------------------------------------
+#  Metal 1        H         549           0        1369    50.62%
+#  Metal 2        V         562           0        1369     0.00%
+#  Metal 3        H         549           0        1369     0.00%
+#  Metal 4        V         502          60        1369     0.00%
+#  Metal 5        H         489          60        1369     2.70%
+#  Metal 6        V         562           0        1369     0.00%
+#  Metal 7        H         549           0        1369     0.00%
+#  Metal 8        V         187           0        1369     0.00%
+#  Metal 9        H         183           0        1369     0.00%
+#  --------------------------------------------------------------
+#  Total                   4132       2.40%  12321     5.92%
+#
+#
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 823.82 (MB), peak = 823.89 (MB)
+#
+#start global routing iteration 1...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 824.41 (MB), peak = 824.47 (MB)
+#
+#start global routing iteration 2...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 824.79 (MB), peak = 824.80 (MB)
+#
+#start global routing iteration 3...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 824.80 (MB), peak = 824.82 (MB)
+#
+#
+#Total number of trivial nets (e.g. < 2 pins) = 10 (skipped).
+#Total number of routable nets = 1436.
+#Total number of nets in the design = 1446.
+#
+#1436 routable nets have only global wires.
+#
+#Routed nets constraints summary:
+#-----------------------------
+#        Rules   Unconstrained  
+#-----------------------------
+#      Default            1436  
+#-----------------------------
+#        Total            1436  
+#-----------------------------
+#
+#Routing constraints summary of the whole design:
+#-----------------------------
+#        Rules   Unconstrained  
+#-----------------------------
+#      Default            1436  
+#-----------------------------
+#        Total            1436  
+#-----------------------------
+#
+#
+#  Congestion Analysis: (blocked Gcells are excluded)
+#
+#                 OverCon          
+#                  #Gcell    %Gcell
+#     Layer           (1)   OverCon
+#  --------------------------------
+#   Metal 1      0(0.00%)   (0.00%)
+#   Metal 2      2(0.15%)   (0.15%)
+#   Metal 3      0(0.00%)   (0.00%)
+#   Metal 4      0(0.00%)   (0.00%)
+#   Metal 5      0(0.00%)   (0.00%)
+#   Metal 6      0(0.00%)   (0.00%)
+#   Metal 7      0(0.00%)   (0.00%)
+#   Metal 8      0(0.00%)   (0.00%)
+#   Metal 9      0(0.00%)   (0.00%)
+#  --------------------------------
+#     Total      2(0.02%)   (0.02%)
+#
+#  The worst congested Gcell overcon (routing demand over resource in number of tracks) = 1
+#
+#Complete Global Routing.
+#Total wire length = 30468 um.
+#Total half perimeter of net bounding box = 27190 um.
+#Total wire length on LAYER M1 = 586 um.
+#Total wire length on LAYER M2 = 14259 um.
+#Total wire length on LAYER M3 = 14148 um.
+#Total wire length on LAYER M4 = 1289 um.
+#Total wire length on LAYER M5 = 186 um.
+#Total wire length on LAYER M6 = 0 um.
+#Total wire length on LAYER M7 = 0 um.
+#Total wire length on LAYER M8 = 0 um.
+#Total wire length on LAYER M9 = 0 um.
+#Total number of vias = 8326
+#Up-Via Summary (total 8326):
+#           
+#-----------------------
+#  Metal 1         5004
+#  Metal 2         3237
+#  Metal 3           81
+#  Metal 4            4
+#-----------------------
+#                  8326 
+#
+#Max overcon = 1 tracks.
+#Total overcon = 0.02%.
+#Worst layer Gcell overcon rate = 0.00%.
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 824.88 (MB), peak = 824.88 (MB)
+#
+#
+#Start data preparation for track assignment...
+#
+#Data preparation is done on Thu Sep 15 16:34:57 2022
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 824.90 (MB), peak = 824.90 (MB)
+#Start Track Assignment.
+#Done with 2341 horizontal wires in 1 hboxes and 2458 vertical wires in 1 hboxes.
+#Done with 486 horizontal wires in 1 hboxes and 474 vertical wires in 1 hboxes.
+#Complete Track Assignment.
+#Total wire length = 29780 um.
+#Total half perimeter of net bounding box = 27190 um.
+#Total wire length on LAYER M1 = 586 um.
+#Total wire length on LAYER M2 = 13843 um.
+#Total wire length on LAYER M3 = 13869 um.
+#Total wire length on LAYER M4 = 1294 um.
+#Total wire length on LAYER M5 = 188 um.
+#Total wire length on LAYER M6 = 0 um.
+#Total wire length on LAYER M7 = 0 um.
+#Total wire length on LAYER M8 = 0 um.
+#Total wire length on LAYER M9 = 0 um.
+#Total number of vias = 8326
+#Up-Via Summary (total 8326):
+#           
+#-----------------------
+#  Metal 1         5004
+#  Metal 2         3237
+#  Metal 3           81
+#  Metal 4            4
+#-----------------------
+#                  8326 
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 796.71 (MB), peak = 824.99 (MB)
+#
+#Cpu time = 00:00:03
+#Elapsed time = 00:00:03
+#Increased memory = 14.79 (MB)
+#Total memory = 796.71 (MB)
+#Peak memory = 824.99 (MB)
+#Using S.M.A.R.T. routing technology.
+#routeSiEffort set to high
+#
+#Start Detail Routing..
+#start initial detail routing ...
+#    number of violations = 3
+#
+#    By Layer and Type :
+#	         MetSpc     Loop   Totals
+#	M1            1        1        2
+#	M2            1        0        1
+#	Totals        2        1        3
+#cpu time = 00:00:07, elapsed time = 00:00:07, memory = 837.74 (MB), peak = 837.74 (MB)
+#start 1st optimization iteration ...
+#    number of violations = 3
+#
+#    By Layer and Type :
+#	         AdjCut   Totals
+#	M1            0        0
+#	M2            3        3
+#	Totals        3        3
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 837.87 (MB), peak = 837.87 (MB)
+#start 2nd optimization iteration ...
+#    number of violations = 0
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 837.87 (MB), peak = 837.87 (MB)
+#Complete Detail Routing.
+#Total wire length = 32416 um.
+#Total half perimeter of net bounding box = 27190 um.
+#Total wire length on LAYER M1 = 2779 um.
+#Total wire length on LAYER M2 = 12141 um.
+#Total wire length on LAYER M3 = 11966 um.
+#Total wire length on LAYER M4 = 4434 um.
+#Total wire length on LAYER M5 = 1096 um.
+#Total wire length on LAYER M6 = 0 um.
+#Total wire length on LAYER M7 = 0 um.
+#Total wire length on LAYER M8 = 0 um.
+#Total wire length on LAYER M9 = 0 um.
+#Total number of vias = 10917
+#Total number of multi-cut vias = 8987 ( 82.3%)
+#Total number of single cut vias = 1930 ( 17.7%)
+#Up-Via Summary (total 10917):
+#                   single-cut          multi-cut      Total
+#-----------------------------------------------------------
+#  Metal 1        1869 ( 33.5%)      3713 ( 66.5%)       5582
+#  Metal 2          54 (  1.3%)      4181 ( 98.7%)       4235
+#  Metal 3           7 (  0.8%)       893 ( 99.2%)        900
+#  Metal 4           0 (  0.0%)       200 (100.0%)        200
+#-----------------------------------------------------------
+#                 1930 ( 17.7%)      8987 ( 82.3%)      10917 
+#
+#Total number of DRC violations = 0
+#Cpu time = 00:00:07
+#Elapsed time = 00:00:07
+#Increased memory = 41.17 (MB)
+#Total memory = 837.88 (MB)
+#Peak memory = 837.88 (MB)
+#
+#start routing for process antenna violation fix ...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 801.40 (MB), peak = 837.89 (MB)
+#
+#Total wire length = 32416 um.
+#Total half perimeter of net bounding box = 27190 um.
+#Total wire length on LAYER M1 = 2779 um.
+#Total wire length on LAYER M2 = 12141 um.
+#Total wire length on LAYER M3 = 11966 um.
+#Total wire length on LAYER M4 = 4434 um.
+#Total wire length on LAYER M5 = 1096 um.
+#Total wire length on LAYER M6 = 0 um.
+#Total wire length on LAYER M7 = 0 um.
+#Total wire length on LAYER M8 = 0 um.
+#Total wire length on LAYER M9 = 0 um.
+#Total number of vias = 10917
+#Total number of multi-cut vias = 8987 ( 82.3%)
+#Total number of single cut vias = 1930 ( 17.7%)
+#Up-Via Summary (total 10917):
+#                   single-cut          multi-cut      Total
+#-----------------------------------------------------------
+#  Metal 1        1869 ( 33.5%)      3713 ( 66.5%)       5582
+#  Metal 2          54 (  1.3%)      4181 ( 98.7%)       4235
+#  Metal 3           7 (  0.8%)       893 ( 99.2%)        900
+#  Metal 4           0 (  0.0%)       200 (100.0%)        200
+#-----------------------------------------------------------
+#                 1930 ( 17.7%)      8987 ( 82.3%)      10917 
+#
+#Total number of DRC violations = 0
+#Total number of net violated process antenna rule = 0
+#
+#
+#Start Post Route wire spreading..
+#
+#Start data preparation for wire spreading...
+#
+#Data preparation is done on Thu Sep 15 16:35:05 2022
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 801.42 (MB), peak = 837.89 (MB)
+#
+#Spread distance (# of tracks): min = 0.500000; max = 2.000000
+#
+#Start Post Route Wire Spread.
+#Done with 247 horizontal wires in 1 hboxes and 343 vertical wires in 1 hboxes.
+#Complete Post Route Wire Spread.
+#
+#Total wire length = 32716 um.
+#Total half perimeter of net bounding box = 27190 um.
+#Total wire length on LAYER M1 = 2789 um.
+#Total wire length on LAYER M2 = 12236 um.
+#Total wire length on LAYER M3 = 12091 um.
+#Total wire length on LAYER M4 = 4501 um.
+#Total wire length on LAYER M5 = 1099 um.
+#Total wire length on LAYER M6 = 0 um.
+#Total wire length on LAYER M7 = 0 um.
+#Total wire length on LAYER M8 = 0 um.
+#Total wire length on LAYER M9 = 0 um.
+#Total number of vias = 10917
+#Total number of multi-cut vias = 8987 ( 82.3%)
+#Total number of single cut vias = 1930 ( 17.7%)
+#Up-Via Summary (total 10917):
+#                   single-cut          multi-cut      Total
+#-----------------------------------------------------------
+#  Metal 1        1869 ( 33.5%)      3713 ( 66.5%)       5582
+#  Metal 2          54 (  1.3%)      4181 ( 98.7%)       4235
+#  Metal 3           7 (  0.8%)       893 ( 99.2%)        900
+#  Metal 4           0 (  0.0%)       200 (100.0%)        200
+#-----------------------------------------------------------
+#                 1930 ( 17.7%)      8987 ( 82.3%)      10917 
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 803.79 (MB), peak = 837.89 (MB)
+#
+#Post Route wire spread is done.
+#Total wire length = 32716 um.
+#Total half perimeter of net bounding box = 27190 um.
+#Total wire length on LAYER M1 = 2789 um.
+#Total wire length on LAYER M2 = 12236 um.
+#Total wire length on LAYER M3 = 12091 um.
+#Total wire length on LAYER M4 = 4501 um.
+#Total wire length on LAYER M5 = 1099 um.
+#Total wire length on LAYER M6 = 0 um.
+#Total wire length on LAYER M7 = 0 um.
+#Total wire length on LAYER M8 = 0 um.
+#Total wire length on LAYER M9 = 0 um.
+#Total number of vias = 10917
+#Total number of multi-cut vias = 8987 ( 82.3%)
+#Total number of single cut vias = 1930 ( 17.7%)
+#Up-Via Summary (total 10917):
+#                   single-cut          multi-cut      Total
+#-----------------------------------------------------------
+#  Metal 1        1869 ( 33.5%)      3713 ( 66.5%)       5582
+#  Metal 2          54 (  1.3%)      4181 ( 98.7%)       4235
+#  Metal 3           7 (  0.8%)       893 ( 99.2%)        900
+#  Metal 4           0 (  0.0%)       200 (100.0%)        200
+#-----------------------------------------------------------
+#                 1930 ( 17.7%)      8987 ( 82.3%)      10917 
+#
+#
+#Start DRC checking..
+#    number of violations = 0
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 840.18 (MB), peak = 842.18 (MB)
+#    number of violations = 0
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 840.18 (MB), peak = 842.18 (MB)
+#CELL_VIEW BISG_TOP,init has no DRC violation.
+#Total number of DRC violations = 0
+#Total number of net violated process antenna rule = 0
+#detailRoute Statistics:
+#Cpu time = 00:00:09
+#Elapsed time = 00:00:09
+#Increased memory = 43.46 (MB)
+#Total memory = 840.18 (MB)
+#Peak memory = 842.18 (MB)
+#
+#globalDetailRoute statistics:
+#Cpu time = 00:00:14
+#Elapsed time = 00:00:14
+#Increased memory = 126.50 (MB)
+#Total memory = 840.28 (MB)
+#Peak memory = 842.18 (MB)
+#Number of warnings = 55
+#Total number of warnings = 56
+#Number of fails = 0
+#Total number of fails = 0
+#Complete globalDetailRoute on Thu Sep 15 16:35:06 2022
+#
+#routeDesign: cpu time = 00:00:14, elapsed time = 00:00:14, memory = 840.28 (MB), peak = 842.18 (MB)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   ENCEXT-3530          1  The process node is not set. Use the com...
+*** Message Summary: 1 warning(s), 0 error(s)
+
+<CMD> saveDesign route.enc
+Writing Netlist "route.enc.dat/BISG_TOP.v.gz" ...
+Saving AAE Data ...
+Saving configuration ...
+Saving preference file route.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=875.1M) ***
+Writing DEF file 'route.enc.dat/BISG_TOP.def.gz', current time is Thu Sep 15 16:35:11 2022 ...
+unitPerMicron=2000, dbgMicronPerDBU=0.000500, unitPerDBU=1.000000
+DEF file 'route.enc.dat/BISG_TOP.def.gz' is written, current time is Thu Sep 15 16:35:11 2022 ...
+Copying Max Timing Library...
+Copying Min Timing Library...
+Copying LEF file...
+Copying  QX Layermap file...
+Copying Cap Table file ...
+Copying IO file...
+Copying Constraints file(s) ...
+Modifying Mode File...
+Modifying View File...
+Copying /home/m108/m108061621/Desktop/TSMC_process/T90/SOCE/celtic/fast.cdB...
+Copying /home/m108/m108061621/Desktop/TSMC_process/T90/SOCE/celtic/slow.cdB...
+RC_corner_max RC_corner_min
+Modifying Globals File...
+Modifying Power Constraints File...
+Generated self-contained design: /home/m108/m108061621/Desktop/Research/BISG_my/b12_adpll_clk/APR/run
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> verifyGeometry
+ *** Starting Verify Geometry (MEM: 875.1) ***
+
+  VERIFY GEOMETRY ...... Starting Verification
+  VERIFY GEOMETRY ...... Initializing
+  VERIFY GEOMETRY ...... Deleting Existing Violations
+  VERIFY GEOMETRY ...... Creating Sub-Areas
+                  ...... bin size: 3840
+VG: elapsed time: 1.00
+Begin Summary ...
+  Cells       : 0
+  SameNet     : 0
+  Wiring      : 0
+  Antenna     : 0
+  Short       : 0
+  Overlap     : 0
+End Summary
+
+  Verification Complete : 0 Viols.  0 Wrngs.
+
+**********End: VERIFY GEOMETRY**********
+ *** verify geometry (CPU: 0:00:00.7  MEM: 122.9M)
+
+<CMD> verifyConnectivity -type all -error 1000 -warning 50
+VERIFY_CONNECTIVITY use new engine.
+
+******** Start: VERIFY CONNECTIVITY ********
+Start Time: Thu Sep 15 16:35:17 2022
+
+Design Name: BISG_TOP
+Database Units: 2000
+Design Boundary: (0.0000, 0.0000) (157.2500, 153.7200)
+Error Limit = 1000; Warning Limit = 50
+Check all nets
+Net ScanNum[19]: Found a geometry with bounding box (157.18,0.00) (157.31,0.50) outside the design boundary.
+Violations for such geometries will be reported.
+
+Begin Summary 
+  Found no problems or warnings.
+End Summary
+
+End Time: Thu Sep 15 16:35:17 2022
+Time Elapsed: 0:00:00.0
+
+******** End: VERIFY CONNECTIVITY ********
+  Verification Complete : 0 Viols.  0 Wrngs.
+  (CPU Time: 0:00:00.1  MEM: 0.000M)
+
+<CMD> summaryReport -outFile summaryReport.rpt
+Creating directory summaryReport.
+Start to collect the design information.
+Build netlist information for Cell BISG_TOP.
+Finished collecting the design information.
+Generating standard cells used in the design report.
+Analyze library ... 
+Analyze netlist ... 
+Generate no-driven nets information report.
+Analyze timing ... 
+Analyze floorplan/placement ... 
+Analysis Routing ...
+Report saved in file summaryReport.rpt.
+<CMD> saveNetlist BISG_TOP_sim.v
+Writing Netlist "BISG_TOP_sim.v" ...
+<CMD> saveNetlist BISG_TOP_lvs.v -includePowerGround
+Writing Netlist "BISG_TOP_lvs.v" ...
+Pwr name (VDD).
+Gnd name (VSS).
+1 Pwr names and 1 Gnd names.
+Creating all pg connections for top cell (BISG_TOP).
+<CMD> streamOut BISG_TOP.gds -mapFile /home/m108/m108061621/Desktop/TSMC_process/T90/SOCE/streamOut.map -libName DesignLib -structureName BISG_TOP -stripes 1 -units 1000 -mode ALL
+Parse map file...
+**WARN: (ENCOGDS-399):	 Only 2 layer(s) (VIA1 M2) of a VIAFILLOPC object is(are) specified in map file '/home/m108/m108061621/Desktop/TSMC_process/T90/SOCE/streamOut.map'. A VIAFILLOPC object needs 3 layers (M1 VIA1 M2) being specified at the same time in the map file. Add VIAFILLOPC contruct(s) to the map file for the following layer(s): M1 or remove VIAFILLOPC construct(s) from the map file for the following layer(s): VIA1 M2.
+Type 'man ENCOGDS-399' for more detail.
+**WARN: (ENCOGDS-399):	 Only 2 layer(s) (M2 VIA2) of a VIAFILLOPC object is(are) specified in map file '/home/m108/m108061621/Desktop/TSMC_process/T90/SOCE/streamOut.map'. A VIAFILLOPC object needs 3 layers (M2 VIA2 M3) being specified at the same time in the map file. Add VIAFILLOPC contruct(s) to the map file for the following layer(s): M3 or remove VIAFILLOPC construct(s) from the map file for the following layer(s): M2 VIA2.
+Type 'man ENCOGDS-399' for more detail.
+**WARN: (ENCOGDS-399):	 Only 1 layer(s) (VIA3) of a VIAFILLOPC object is(are) specified in map file '/home/m108/m108061621/Desktop/TSMC_process/T90/SOCE/streamOut.map'. A VIAFILLOPC object needs 3 layers (M3 VIA3 M4) being specified at the same time in the map file. Add VIAFILLOPC contruct(s) to the map file for the following layer(s): M3 M4 or remove VIAFILLOPC construct(s) from the map file for the following layer(s): VIA3.
+Type 'man ENCOGDS-399' for more detail.
+**WARN: (ENCOGDS-399):	 Only 1 layer(s) (VIA4) of a VIAFILLOPC object is(are) specified in map file '/home/m108/m108061621/Desktop/TSMC_process/T90/SOCE/streamOut.map'. A VIAFILLOPC object needs 3 layers (M4 VIA4 M5) being specified at the same time in the map file. Add VIAFILLOPC contruct(s) to the map file for the following layer(s): M4 M5 or remove VIAFILLOPC construct(s) from the map file for the following layer(s): VIA4.
+Type 'man ENCOGDS-399' for more detail.
+**WARN: (ENCOGDS-399):	 Only 1 layer(s) (VIA5) of a VIAFILLOPC object is(are) specified in map file '/home/m108/m108061621/Desktop/TSMC_process/T90/SOCE/streamOut.map'. A VIAFILLOPC object needs 3 layers (M5 VIA5 M6) being specified at the same time in the map file. Add VIAFILLOPC contruct(s) to the map file for the following layer(s): M5 M6 or remove VIAFILLOPC construct(s) from the map file for the following layer(s): VIA5.
+Type 'man ENCOGDS-399' for more detail.
+**WARN: (ENCOGDS-399):	 Only 1 layer(s) (VIA6) of a VIAFILLOPC object is(are) specified in map file '/home/m108/m108061621/Desktop/TSMC_process/T90/SOCE/streamOut.map'. A VIAFILLOPC object needs 3 layers (M6 VIA6 M7) being specified at the same time in the map file. Add VIAFILLOPC contruct(s) to the map file for the following layer(s): M6 M7 or remove VIAFILLOPC construct(s) from the map file for the following layer(s): VIA6.
+Type 'man ENCOGDS-399' for more detail.
+**WARN: (ENCOGDS-399):	 Only 1 layer(s) (VIA7) of a VIAFILLOPC object is(are) specified in map file '/home/m108/m108061621/Desktop/TSMC_process/T90/SOCE/streamOut.map'. A VIAFILLOPC object needs 3 layers (M7 VIA7 M8) being specified at the same time in the map file. Add VIAFILLOPC contruct(s) to the map file for the following layer(s): M7 M8 or remove VIAFILLOPC construct(s) from the map file for the following layer(s): VIA7.
+Type 'man ENCOGDS-399' for more detail.
+**WARN: (ENCOGDS-399):	 Only 1 layer(s) (VIA8) of a VIAFILLOPC object is(are) specified in map file '/home/m108/m108061621/Desktop/TSMC_process/T90/SOCE/streamOut.map'. A VIAFILLOPC object needs 3 layers (M8 VIA8 M9) being specified at the same time in the map file. Add VIAFILLOPC contruct(s) to the map file for the following layer(s): M8 M9 or remove VIAFILLOPC construct(s) from the map file for the following layer(s): VIA8.
+Type 'man ENCOGDS-399' for more detail.
+Writing GDSII file ...
+	****** db unit per micron = 2000 ******
+	****** output gds2 file unit per micron = 1000 ******
+	****** unit scaling factor = 0.5 ******
+**WARN: (ENCOGDS-250):	Specified unit is smaller than the one in db. You may have rounding problems
+Output for instance
+Output for bump
+Output for physical terminals
+Output for logical terminals
+Output for regular nets
+Output for special nets and metal fills
+Output for via structure generation
+Statistics for GDS generated (version 3)
+----------------------------------------
+Stream Out Layer Mapping Information:
+GDS Layer Number          GDS Layer Name
+----------------------------------------
+    31                                M1
+    51                              VIA1
+    32                                M2
+    52                              VIA2
+    33                                M3
+    53                              VIA3
+    34                                M4
+    54                              VIA4
+    35                                M5
+    55                              VIA5
+    36                                M6
+    56                              VIA6
+    37                                M7
+    57                              VIA7
+    38                                M8
+    58                              VIA8
+    39                                M9
+    31                                M1
+    131                               M1
+    32                                M2
+    132                               M2
+    33                                M3
+    133                               M3
+    34                                M4
+    134                               M4
+    35                                M5
+    135                               M5
+    36                                M6
+    136                               M6
+    37                                M7
+    137                               M7
+    38                                M8
+    138                               M8
+    39                                M9
+    139                               M9
+
+
+Stream Out Information Processed for GDS version 3:
+Units: 1000 DBU
+
+Object                             Count
+----------------------------------------
+Instances                           1270
+
+Ports/Pins                            95
+    metal layer M2                    35
+    metal layer M3                    44
+    metal layer M4                     8
+    metal layer M5                     8
+
+Nets                               13591
+    metal layer M1                  1811
+    metal layer M2                  6784
+    metal layer M3                  3812
+    metal layer M4                  1041
+    metal layer M5                   143
+
+    Via Instances                  10917
+
+Special Nets                         158
+    metal layer M1                   150
+    metal layer M4                     4
+    metal layer M5                     4
+
+    Via Instances                    308
+
+Metal Fills                            0
+
+    Via Instances                      0
+
+Metal FillOPCs                         0
+
+    Via Instances                      0
+
+Text                                1533
+    metal layer M1                   381
+    metal layer M2                   840
+    metal layer M3                   267
+    metal layer M4                    32
+    metal layer M5                    13
+
+
+Blockages                              0
+
+
+Custom Text                            0
+
+
+Custom Box                             0
+
+######Streamout is finished!
+<CMD> lefOut BISG_TOP.lef
+<CMD> saveDesign BISG_TOP.enc
+Writing Netlist "BISG_TOP.enc.dat/BISG_TOP.v.gz" ...
+Saving AAE Data ...
+Saving configuration ...
+Saving preference file BISG_TOP.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=897.0M) ***
+Writing DEF file 'BISG_TOP.enc.dat/BISG_TOP.def.gz', current time is Thu Sep 15 16:35:22 2022 ...
+unitPerMicron=2000, dbgMicronPerDBU=0.000500, unitPerDBU=1.000000
+DEF file 'BISG_TOP.enc.dat/BISG_TOP.def.gz' is written, current time is Thu Sep 15 16:35:22 2022 ...
+Copying Max Timing Library...
+Copying Min Timing Library...
+Copying LEF file...
+Copying  QX Layermap file...
+Copying Cap Table file ...
+Copying IO file...
+Copying Constraints file(s) ...
+Modifying Mode File...
+Modifying View File...
+Copying /home/m108/m108061621/Desktop/TSMC_process/T90/SOCE/celtic/fast.cdB...
+Copying /home/m108/m108061621/Desktop/TSMC_process/T90/SOCE/celtic/slow.cdB...
+RC_corner_max RC_corner_min
+Modifying Globals File...
+Modifying Power Constraints File...
+Generated self-contained design: /home/m108/m108061621/Desktop/Research/BISG_my/b12_adpll_clk/APR/run
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> selectPhyPin 0.0000 -0.0700 0.5000 0.0700 3 {speed[0]}
+<CMD> fit
+<CMD> fit
+**ERROR: (ENCSYT-6180):	Cannot find any Net.
+<CMD> deselectAll
+<CMD> selectWire 15.1200 85.4700 141.9600 85.8900 1 VDD
+
+*** Memory Usage v#1 (Current mem = 917.027M, initial mem = 95.336M) ***
+*** Message Summary: 614 warning(s), 7 error(s)
+
+--- Ending "Encounter" (totcpu=0:07:00, real=0:40:55, mem=917.0M) ---

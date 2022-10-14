@@ -1,0 +1,27 @@
+ 
+****************************************
+Report : reference
+Design : lfsr
+Version: R-2020.09-SP5
+Date   : Fri Jul  1 13:29:38 2022
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+DFFRQX2            slow          15.523200       7    108.662400  n
+DFFSQXL            slow          14.112000       9    127.008004  n
+XOR2X1             slow           5.644800       3     16.934401  
+-----------------------------------------------------------------------------
+Total 3 references                                    252.604805
+1

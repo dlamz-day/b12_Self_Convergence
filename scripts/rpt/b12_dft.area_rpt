@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : b12
+Version: R-2020.09-SP5
+Date   : Mon Jul  4 11:12:06 2022
+****************************************
+
+Library(s) Used:
+
+    slow (File: /home/m108/m108061621/Desktop/TSMC_process/T90/db/slow.db)
+
+Number of ports:                           33
+Number of nets:                           668
+Number of cells:                          645
+Number of combinational cells:            524
+Number of sequential cells:               121
+Number of macros/black boxes:               0
+Number of buf/inv:                        135
+Number of references:                      47
+
+Combinational area:               1912.881653
+Buf/Inv area:                      293.529610
+Noncombinational area:            2393.395166
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                  4306.276819
+Total area:                 undefined
+1

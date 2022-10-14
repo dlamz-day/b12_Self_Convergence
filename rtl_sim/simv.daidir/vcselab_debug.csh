@@ -1,0 +1,14 @@
+#!/bin/csh -f
+
+cd /home/m108/m108061621/Desktop/Research/BISG_my/b12_adpll_clk/rtl_sim
+
+#This ENV is used to avoid overriding current script in next vcselab run 
+setenv SNPS_VCSELAB_SCRIPT_NO_OVERRIDE  1
+
+/usr/cad/synopsys/vcs/2022.06/linux64/bin/vcselab $* \
+    -o \
+    simv \
+    -nobanner \
+
+cd -
+

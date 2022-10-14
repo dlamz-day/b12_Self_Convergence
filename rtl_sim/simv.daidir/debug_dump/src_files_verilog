@@ -1,0 +1,12 @@
+/home/m108/m108061621/Desktop/Research/BISG_my/b12_adpll_clk/gl_sim/ADPLL.v
+/home/m108/m108061621/Desktop/Research/BISG_my/b12_adpll_clk/mul/MISR.v
+/home/m108/m108061621/Desktop/Research/BISG_my/b12_adpll_clk/mul/base.v
+/home/m108/m108061621/Desktop/Research/BISG_my/b12_adpll_clk/mul/comp.v
+/home/m108/m108061621/Desktop/Research/BISG_my/b12_adpll_clk/mul/control.v
+/home/m108/m108061621/Desktop/Research/BISG_my/b12_adpll_clk/mul/control_fast.v
+/home/m108/m108061621/Desktop/Research/BISG_my/b12_adpll_clk/mul/control_slow.v
+/home/m108/m108061621/Desktop/Research/BISG_my/b12_adpll_clk/mul/lfsr.v
+/home/m108/m108061621/Desktop/Research/BISG_my/b12_adpll_clk/netlist/BISG_TOP.v
+/home/m108/m108061621/Desktop/Research/BISG_my/b12_adpll_clk/netlist/b12_dft.v
+/home/m108/m108061621/Desktop/Research/BISG_my/b12_adpll_clk/rtl_sim/top_t.v
+/home/m108/m108061621/Desktop/Research/BISG_my/b12_adpll_clk/rtl_sim/tsmc090.v

@@ -1,0 +1,31 @@
+# MMMC View Definition File
+# Do Not Remove Above Line
+
+
+
+## ============= create library set ============= ## 
+create_library_set -name lib_max -timing {/home/m108/m108061621/Desktop/TSMC_process/T90/lib/slow.lib} 
+create_library_set -name lib_min -timing {/home/m108/m108061621/Desktop/TSMC_process/T90/lib/fast.lib} 
+
+## ============= create operation condition ============= ## 
+create_opcond -name OC_0p9v_125c -process 1 -voltage 0.9 -temperature 125
+create_opcond -name OC_1p1v_m40c -process 1 -voltage 1.1 -temperature -40
+
+## ============= create timing condition ============= ## 
+create_timing_condition -name TC_max -library_set {lib_max} -opcond OC_0p9v_125c
+create_timing_condition -name TC_min -library_set {lib_min} -opcond OC_1p1v_m40c
+
+## ============= create delay corner ============= ## 
+create_delay_corner -name DC_max -timing_condition {TC_max}
+create_delay_corner -name DC_min -timing_condition {TC_min}
+
+## ============= read sdc file ============= ## 
+create_constraint_mode -name CM_func -sdc_files {../design_data/BISG_TOP_syn.sdc}
+
+
+## ============= create analysis view ============= ## 
+create_analysis_view -name AV_func_max -constraint_mode {CM_func} -delay_corner {DC_max}
+create_analysis_view -name AV_func_min -constraint_mode {CM_func} -delay_corner {DC_min}
+
+## ============= set analysis view ============= ## 
+set_analysis_view -setup {AV_func_max} -hold {AV_func_min}

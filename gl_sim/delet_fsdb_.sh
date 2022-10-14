@@ -1,0 +1,1 @@
+rm -r RTL_top_TzsHung_test.fsdb.*

@@ -1,0 +1,100 @@
+# PPCMD 1 
+# sroute -connect { corePin } -layerChangeRange { M1 M5 } -blockPinTarget { nearestTarget } -checkAlignedSecondaryPin 1 -allowJogging 1 -crossoverViaBottomLayer M1 -allowLayerChange 1 -targetViaTopLayer M5 -crossoverViaTopLayer M5 -targetViaBottomLayer M1 -nets { VDD VSS }
+# 6 
+# 16 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 1 
+
+# PPCMD 2 
+# sroute -connect { blockPin } -layerChangeRange { M1 M5 } -blockPinTarget { nearestTarget } -checkAlignedSecondaryPin 1 -blockPin useLef -allowJogging 1 -crossoverViaBottomLayer M1 -allowLayerChange 1 -targetViaTopLayer M5 -crossoverViaTopLayer M5 -targetViaBottomLayer M1 -nets { VDD VSS }
+# 5 
+# 16 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 2 
+
+# PPCMD 3 
+# addRing -skip_via_on_wire_shape Noshape -skip_via_on_pin Standardcell -around each_block -jog_distance 0.42 -threshold 0.42 -type block_rings -nets {VDD VSS} -follow core -layer {bottom M1 top M1 right M2 left M2} -width 1 -spacing 1 -offset 1.5 -layer_bottom M1 -layer_top M1 -layer_right M2 -layer_left M2 -width_top {1} -width_bottom {1} -width_left {1} -width_right {1} -spacing_top {1} -spacing_bottom {1} -spacing_left {1} -spacing_right {1} -offset_top {1.5} -offset_bottom {1.5} -offset_left {1.5} -offset_right {1.5} -stacked_via_top_layer M9 -stacked_via_bottom_layer M1
+# 4 
+# 8 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 3 
+
+# PPCMD 4 
+# addRing -skip_via_on_wire_shape Noshape -skip_via_on_pin Standardcell -type core_rings -jog_distance 0.42 -threshold 0.42 -nets {VDD VSS} -follow core -layer {bottom M5 top M5 right M4 left M4} -width 3 -spacing 2 -offset 4 -extend_corner {tl lt tr bl br rb lb rt} -layer_bottom M5 -layer_top M5 -layer_right M4 -layer_left M4 -width_top {3} -width_bottom {3} -width_left {3} -width_right {3} -spacing_top {2} -spacing_bottom {2} -spacing_left {2} -spacing_right {2} -offset_top {4} -offset_bottom {4} -offset_left {4} -offset_right {4} -tl 1 -lt 1 -tr 1 -bl 1 -br 1 -rb 1 -lb 1 -rt 1 -stacked_via_top_layer M9 -stacked_via_bottom_layer M1
+# 3 
+# 32 
+# 1 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# VSS 6000 5 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 157250 9240 157250 298200 
+# END_RING_PT_INFO_LIST 
+# VSS 6000 4 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 9240 153720 304920 153720 
+# END_RING_PT_INFO_LIST 
+# VDD 6000 5 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 157250 19240 157250 288200 
+# END_RING_PT_INFO_LIST 
+# VDD 6000 4 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 19240 153720 294920 153720 
+# END_RING_PT_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 4 
+
+# PPCMD 5 
+# setAddRingMode -stacked_via_top_layer M9
+# 2 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 5 
+
+# PPCMD 6 
+# setAddRingMode -stacked_via_bottom_layer M1
+# 1 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 6 
+

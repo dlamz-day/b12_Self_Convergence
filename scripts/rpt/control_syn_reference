@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : reference
+Design : control
+Version: R-2020.09-SP5
+Date   : Wed Aug 31 20:29:07 2022
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CLKBUFX6           slow           4.939200       1      4.939200  
+CLKBUFX12          slow           8.467200       1      8.467200  
+CLKBUFX20          slow          12.700800       1     12.700800  
+CLKBUFX32          slow          20.462400       1     20.462400  
+CLKBUFX40          slow          24.695999       1     24.695999  
+OA21X1             slow           4.939200       1      4.939200  
+control_fast                    203.918401       1    203.918401  h, n
+control_slow                   1353.340806       1   1353.340806  h, n
+-----------------------------------------------------------------------------
+Total 8 references                                   1633.464007
+1

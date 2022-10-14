@@ -1,0 +1,1 @@
+check_connectivity -type all -ignore_dangling_wires -error 1000 -warning 50

@@ -1,0 +1,25 @@
+ 
+****************************************
+Report : reference
+Design : clk_select
+Version: R-2020.09-SP5
+Date   : Fri Aug  5 19:39:54 2022
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CLKBUFX2           slow           2.822400       1      2.822400  
+-----------------------------------------------------------------------------
+Total 1 references                                      2.822400
+1

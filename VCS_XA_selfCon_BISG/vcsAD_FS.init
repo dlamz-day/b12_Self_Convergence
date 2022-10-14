@@ -1,0 +1,32 @@
+choose xa -nspice spice_FS.header -c xa.cfg -o XA_FS -mt max;
+spice_port_order_as_vlog;
+use_spice -cell BISG_TOP;
+use_spice -cell spice_pwr_supply;
+
+d2a powernet hiv=1v lov=0v node=tb_top.cut.vdd;
+d2a powernet hiv=1v lov=0v node=tb_top.cut.vss;
+
+
+d2a powernet rise_time=50p fall_time=50p hiv=1v lov=0v node=tb_top.cut.clk;
+d2a powernet rise_time=50p fall_time=50p hiv=1v lov=0v node=tb_top.cut.rst_n;
+d2a powernet rise_time=50p fall_time=50p hiv=1v lov=0v node=tb_top.cut.k*;
+d2a powernet rise_time=50p fall_time=50p hiv=1v lov=0v node=tb_top.cut.start;
+d2a powernet rise_time=50p fall_time=50p hiv=1v lov=0v node=tb_top.cut.ScanNum*;
+d2a powernet rise_time=50p fall_time=50p hiv=1v lov=0v node=tb_top.cut.ADPLL_LOCK;
+d2a powernet rise_time=50p fall_time=50p hiv=1v lov=0v node=tb_top.cut.t_p_dec*;
+d2a powernet rise_time=50p fall_time=50p hiv=1v lov=0v node=tb_top.cut.range*;
+d2a powernet rise_time=50p fall_time=50p hiv=1v lov=0v node=tb_top.cut.pass;
+d2a powernet rise_time=50p fall_time=50p hiv=1v lov=0v node=tb_top.cut.base_clk;
+
+a2d loth=0.3v hith=0.703v node=tb_top.cut.nl*;
+a2d loth=0.3v hith=0.703v node=tb_top.cut.nloss;
+a2d loth=0.3v hith=0.703v node=tb_top.cut.speaker;
+
+a2d loth=0.3v hith=0.703v node=tb_top.cut.sig*;
+a2d loth=0.3v hith=0.703v node=tb_top.cut.speed*;
+a2d loth=0.3v hith=0.703v node=tb_top.cut.TCK;
+a2d loth=0.3v hith=0.703v node=tb_top.cut.scan_done;
+a2d loth=0.3v hith=0.703v node=tb_top.cut.over;
+a2d loth=0.3v hith=0.703v node=tb_top.cut.test_se;
+a2d loth=0.3v hith=0.703v node=tb_top.cut.digi_out;
+a2d loth=0.3v hith=0.703v node=tb_top.cut.sub_rst;

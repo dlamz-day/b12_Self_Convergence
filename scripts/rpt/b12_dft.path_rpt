@@ -1,0 +1,189 @@
+ 
+****************************************
+Report : Scan path
+Design : b12
+Version: R-2020.09-SP5
+Date   : Mon Jul  4 11:12:06 2022
+****************************************
+
+========================================
+TEST MODE: Internal_scan
+VIEW     : Specification
+========================================
+No scan path defined in this mode.
+
+ 
+****************************************
+Report : Scan path
+Design : b12
+Version: R-2020.09-SP5
+Date   : Mon Jul  4 11:12:06 2022
+****************************************
+
+========================================
+TEST MODE: Internal_scan
+VIEW     : Existing DFT
+========================================
+
+========================================
+AS SPECIFIED BY USER
+========================================
+
+
+========================================
+AS BUILT BY insert_dft
+========================================
+
+Scan_path    Len   ScanDataIn  ScanDataOut ScanEnable  MasterClock SlaveClock
+-----------  ----- ----------- ----------- ----------- ----------- -----------
+I 1          11    test_si1    test_so1    test_se     clock       -
+I 2          11    test_si2    test_so2    test_se     clock       -
+I 3          11    test_si3    test_so3    test_se     clock       -
+I 4          11    test_si4    test_so4    test_se     clock       -
+I 5          11    test_si5    test_so5    test_se     clock       -
+I 6          11    test_si6    test_so6    test_se     clock       -
+I 7          11    test_si7    test_so7    test_se     clock       -
+I 8          11    test_si8    test_so8    test_se     clock       -
+I 9          11    test_si9    nl[2]       test_se     clock       -
+I 10         11    test_si10   nloss       test_se     clock       -
+I 11         11    test_si11   speaker     test_se     clock       -
+
+========================================
+TEST MODE: Internal_scan
+VIEW     : Existing DFT
+========================================
+
+========================================
+AS SPECIFIED BY USER
+========================================
+
+
+========================================
+AS BUILT BY insert_dft
+========================================
+
+Scan_path     Cell_#    Instance_name            Clocks
+---------     ------    -------------            ------
+I 1           0         address_reg_0_           clock 
+              1         address_reg_1_
+              2         address_reg_2_
+              3         address_reg_3_
+              4         address_reg_4_
+              5         count_reg2_0_
+              6         count_reg2_1_
+              7         count_reg2_2_
+              8         count_reg2_3_
+              9         count_reg2_4_
+              10        count_reg2_5_
+I 2           0         count_reg_0_             clock 
+              1         count_reg_1_
+              2         counter_reg_0_
+              3         counter_reg_1_
+              4         counter_reg_2_
+              5         data_in_reg_0_
+              6         data_in_reg_1_
+              7         data_out_reg_0_
+              8         data_out_reg_1_
+              9         gamma_reg_0_
+              10        gamma_reg_1_
+I 3           0         gamma_reg_2_             clock 
+              1         gamma_reg_3_
+              2         gamma_reg_4_
+              3         ind_reg_0_
+              4         ind_reg_1_
+              5         max_reg_0_
+              6         max_reg_1_
+              7         max_reg_2_
+              8         max_reg_3_
+              9         max_reg_4_
+              10        memory_reg_0__0_
+I 4           0         memory_reg_0__1_         clock 
+              1         memory_reg_1__0_
+              2         memory_reg_1__1_
+              3         memory_reg_2__0_
+              4         memory_reg_2__1_
+              5         memory_reg_3__0_
+              6         memory_reg_3__1_
+              7         memory_reg_4__0_
+              8         memory_reg_4__1_
+              9         memory_reg_5__0_
+              10        memory_reg_5__1_
+I 5           0         memory_reg_6__0_         clock 
+              1         memory_reg_6__1_
+              2         memory_reg_7__0_
+              3         memory_reg_7__1_
+              4         memory_reg_8__0_
+              5         memory_reg_8__1_
+              6         memory_reg_9__0_
+              7         memory_reg_9__1_
+              8         memory_reg_10__0_
+              9         memory_reg_10__1_
+              10        memory_reg_11__0_
+I 6           0         memory_reg_11__1_        clock 
+              1         memory_reg_12__0_
+              2         memory_reg_12__1_
+              3         memory_reg_13__0_
+              4         memory_reg_13__1_
+              5         memory_reg_14__0_
+              6         memory_reg_14__1_
+              7         memory_reg_15__0_
+              8         memory_reg_15__1_
+              9         memory_reg_16__0_
+              10        memory_reg_16__1_
+I 7           0         memory_reg_17__0_        clock 
+              1         memory_reg_17__1_
+              2         memory_reg_18__0_
+              3         memory_reg_18__1_
+              4         memory_reg_19__0_
+              5         memory_reg_19__1_
+              6         memory_reg_20__0_
+              7         memory_reg_20__1_
+              8         memory_reg_21__0_
+              9         memory_reg_21__1_
+              10        memory_reg_22__0_
+I 8           0         memory_reg_22__1_        clock 
+              1         memory_reg_23__0_
+              2         memory_reg_23__1_
+              3         memory_reg_24__0_
+              4         memory_reg_24__1_
+              5         memory_reg_25__0_
+              6         memory_reg_25__1_
+              7         memory_reg_26__0_
+              8         memory_reg_26__1_
+              9         memory_reg_27__0_
+              10        memory_reg_27__1_
+I 9           0         memory_reg_28__0_        clock 
+              1         memory_reg_28__1_
+              2         memory_reg_29__0_
+              3         memory_reg_29__1_
+              4         memory_reg_30__0_
+              5         memory_reg_30__1_
+              6         memory_reg_31__0_
+              7         memory_reg_31__1_
+              8         nl_reg_0_
+              9         nl_reg_1_
+              10        nl_reg_2_
+I 10          0         nl_reg_3_                clock 
+              1         num_reg_0_
+              2         num_reg_1_
+              3         play_reg
+              4         s_reg
+              5         scan_reg_0_
+              6         scan_reg_1_
+              7         scan_reg_2_
+              8         scan_reg_3_
+              9         scan_reg_4_
+              10        nloss_reg
+I 11          0         sound_reg_0_             clock 
+              1         sound_reg_1_
+              2         sound_reg_2_
+              3         timebase_reg_0_
+              4         timebase_reg_1_
+              5         timebase_reg_2_
+              6         timebase_reg_3_
+              7         timebase_reg_4_
+              8         timebase_reg_5_
+              9         wr_reg
+              10        speaker_reg
+
+1

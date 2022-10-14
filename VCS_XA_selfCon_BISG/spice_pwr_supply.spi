@@ -1,0 +1,4 @@
+.subckt spice_pwr_supply vdd vss
+v_vdd vdd 0 dc 1.0v
+v_vss vss 0 dc 0v
+.ends

@@ -1,0 +1,33 @@
+ 
+****************************************
+Report : reference
+Design : MISR
+Version: R-2020.09-SP5
+Date   : Mon Jul  4 11:20:02 2022
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CLKINVX1           slow           2.116800       1      2.116800  
+DFFRQX2            slow          15.523200       8    124.185600  n
+DFFRX1             slow          16.934401       1     16.934401  n
+DFFSQXL            slow          14.112000       4     56.448002  n
+INVX2              slow           2.116800       1      2.116800  
+OAI2BB2X1          slow           5.644800      11     62.092802  
+OAI22X1            slow           4.233600       2      8.467200  
+XNOR2X1            slow           5.644800      11     62.092802  
+XOR2X1             slow           5.644800       1      5.644800  
+-----------------------------------------------------------------------------
+Total 9 references                                    340.099207
+1
